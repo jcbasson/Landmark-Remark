@@ -42,6 +42,12 @@ div, section, aside {
     height:450px;
 }
 
+#landmark-remarks-map{
+    height: 100%;
+    width: 100%;
+    background-color: grey;
+}
+
 #landmark-others-remarks-component
 {
 }

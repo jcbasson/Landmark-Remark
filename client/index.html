@@ -27,7 +27,7 @@
             </div>
             <div class="row">
                 <div id="landmark-remarks-map-component">
-                        This will contain the map
+                        <div id="landmark-remarks-map"></div>
                 </div>
             </div>
         </section>
@@ -104,5 +104,52 @@
         </aside>
     </section>
 </main>
+<script>
+
+    function initializeMapWithUserLocation() {
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(showPosition, showError);
+        } else {
+            alert("Geolocation is not supported by this browser.");
+        }
+    }
+
+    function showPosition(position) {
+        var myLatitude = position.coords.latitude;
+        var myLongitude = position.coords.longitude;
+        initialiseMap(myLatitude, myLongitude);
+    }
+
+    function showError(error) {
+        switch(error.code) {
+            case error.PERMISSION_DENIED:
+                alert("User denied the request for Geolocation.");
+                break;
+            case error.POSITION_UNAVAILABLE:
+                alert("Location information is unavailable.");
+                break;
+            case error.TIMEOUT:
+                alert("The request to get user location timed out.");
+                break;
+            case error.UNKNOWN_ERROR:
+                alert("An unknown error occurred.");
+                break;
+        }
+    }
+    function initialiseMap(myLatitude, myLongitude) {
+        //var uluru = {lat: -25.363, lng: 131.044};
+        var userLocation = {lat: myLatitude, lng: myLongitude};
+        var map = new google.maps.Map(document.getElementById('landmark-remarks-map'), {
+            zoom: 4,
+            center: userLocation
+        });
+        var marker = new google.maps.Marker({
+            position: userLocation,
+            map: map
+        });
+    }
+</script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD8FXHuzSz2Z6CD6sxJB1CgCz-1Am8UFFc&callback=initializeMapWithUserLocation">
+</script>
 </body>
 </html>
