@@ -40,9 +40,26 @@ module.exports = {
     module: {
         rules: [{
             test: /\.css$/,
-            use: ExtractTextPlugin.extract({
-                use: 'css-loader'
+            use: ExtractTextPluginConfig.extract({
+                use: [{
+                    loader: "css-loader"
+                }, {
+                    loader: 'postcss-loader', // Run post css actions
+                    options: {
+                        plugins: function () {
+                            return [
+                                require('precss'),
+                                require('autoprefixer')
+                            ];
+                        }
+                    }
+                }],
+                // use style-loader in development
+                fallback: "style-loader"
             })
+        }, {
+            test: /\.woff($|\?)|\.woff2($|\?)|\.ttf($|\?)|\.eot($|\?)|\.svg($|\?)/,
+            use: 'url-loader'
         }, {
             test: /\.js$/,
             use: 'babel-loader',
