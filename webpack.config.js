@@ -7,7 +7,7 @@ const HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
     filename: 'index.html',
     inject: 'body'
 });
-const ExtractTextPluginConfig = new ExtractTextPlugin("styles.css");
+const ExtractTextPluginConfig = new ExtractTextPlugin("app.css");
 
 const VendorCommonsChunkPluginConfig = new Webpack.optimize.CommonsChunkPlugin({
     name: 'vendor',
@@ -43,19 +43,7 @@ module.exports = {
             use: ExtractTextPluginConfig.extract({
                 use: [{
                     loader: "css-loader"
-                }, {
-                    loader: 'postcss-loader', // Run post css actions
-                    options: {
-                        plugins: function () {
-                            return [
-                                require('precss'),
-                                require('autoprefixer')
-                            ];
-                        }
-                    }
-                }],
-                // use style-loader in development
-                fallback: "style-loader"
+                }]
             })
         }, {
             test: /\.woff($|\?)|\.woff2($|\?)|\.ttf($|\?)|\.eot($|\?)|\.svg($|\?)/,

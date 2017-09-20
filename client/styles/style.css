@@ -1,4 +1,48 @@
-body
-{
+body {
     background: white;
 }
+
+div, section, aside {
+
+}
+.lblClickToMark{
+    float: right;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+.others-remark
+{
+    border: 1px solid black;
+}
+.others-remark > header {
+    width: 100%;
+    font-weight: bold;
+    padding-left: 5px;
+    height: 15px;
+}
+
+.others-remark > header > .others-remark-username {
+    float: left;
+}
+
+.others-remark > header > .others-remark-date {
+    float: right;
+
+}
+
+.others-remark-text {
+    padding-left: 5px;
+    width: 100%
+}
+
+#landmark-remarks-map-component
+{
+    border: 1px solid black;
+    height:450px;
+}
+
+#landmark-others-remarks-component
+{
+}
+
