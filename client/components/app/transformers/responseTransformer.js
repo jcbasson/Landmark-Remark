@@ -1,14 +1,14 @@
-import UserLandMarksModel from '../models/userLandMarksModel';
+import UserModel from '../../../models/userModel';
 import StringUtils from '../../../utils/stringUtils'
 
 const ResponseTransformer = {};
 
 ResponseTransformer.userLandmarks = (response) => {
-    let userLandMarksModel = new UserLandMarksModel();
+    let userModel = new UserModel();
     if (response && response instanceof Object) {
-        userLandMarksModel = createModelFromResponseItem(response, userLandMarksModel);
+        userModel = createModelFromResponseItem(response, userModel);
     }
-    return userLandMarksModel;
+    return userModel;
 };
 
 const createModelFromResponseItem = (responseItem, model) => {

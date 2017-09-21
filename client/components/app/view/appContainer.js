@@ -10,6 +10,7 @@ class AppContainer extends Component {
 
     componentDidMount() {
         const {dispatch} = this.props;
+        console.log('JC AppContainer componentDidMount()' ,this.props);
 
     }
 
