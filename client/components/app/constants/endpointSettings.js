@@ -1,0 +1,1 @@
+export const UserLandMarksEndPoint = `http://localhost:50644/api/UserLandmark`;
