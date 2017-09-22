@@ -3,7 +3,8 @@ import StringUtils from '../../../utils/stringUtils'
 
 const ResponseTransformer = {};
 
-ResponseTransformer.userLandmarks = (response) => {
+ResponseTransformer.userMap = (response) => {
+    console.log('JC ResponseTransformer.userMap response',response );
     let userModel = new UserModel();
     if (response && response instanceof Object) {
         userModel = createModelFromResponseItem(response, userModel);

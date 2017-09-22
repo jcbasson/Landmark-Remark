@@ -4,7 +4,6 @@ class OtherRemarksModel{
         this.id = null;
         this.userName = null;
         this.remark = null;
-        this.dateMade = null;
         this.locationId = null;
     }
 }

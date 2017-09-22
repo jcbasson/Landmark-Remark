@@ -12,11 +12,11 @@ const LandMarkOtherRemarksPresenter = ({otherRemarks}) => (
                     <header>
                         <label className="others-remark-username">{otherRemark.userName}</label>
                         <time className="others-remark-date">
-                            {otherRemark.dateMade}
+                            {otherRemark.remark.dateMade}
                         </time>
                     </header>
                     <p className="others-remark-text">
-                        otherRemark.remark
+                        {otherRemark.remark.text}
                     </p>
                 </article>
             ))}

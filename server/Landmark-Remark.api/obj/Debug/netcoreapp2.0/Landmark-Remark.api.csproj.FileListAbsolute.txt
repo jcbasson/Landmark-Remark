@@ -1,0 +1,11 @@
+C:\Users\janba\Projects\Landmark-Remark\server\Landmark-Remark.api\obj\Debug\netcoreapp2.0\Landmark-Remark.api.csprojResolveAssemblyReference.cache
+C:\Users\janba\Projects\Landmark-Remark\server\Landmark-Remark.api\obj\Debug\netcoreapp2.0\Landmark-Remark.api.csproj.CoreCompileInputs.cache
+C:\Users\janba\Projects\Landmark-Remark\server\Landmark-Remark.api\obj\Debug\netcoreapp2.0\Landmark-Remark.api.AssemblyInfoInputs.cache
+C:\Users\janba\Projects\Landmark-Remark\server\Landmark-Remark.api\obj\Debug\netcoreapp2.0\Landmark-Remark.api.AssemblyInfo.cs
+C:\Users\janba\Projects\Landmark-Remark\server\Landmark-Remark.api\bin\Debug\netcoreapp2.0\Landmark-Remark.api.deps.json
+C:\Users\janba\Projects\Landmark-Remark\server\Landmark-Remark.api\bin\Debug\netcoreapp2.0\Landmark-Remark.api.runtimeconfig.json
+C:\Users\janba\Projects\Landmark-Remark\server\Landmark-Remark.api\bin\Debug\netcoreapp2.0\Landmark-Remark.api.runtimeconfig.dev.json
+C:\Users\janba\Projects\Landmark-Remark\server\Landmark-Remark.api\bin\Debug\netcoreapp2.0\Landmark-Remark.api.dll
+C:\Users\janba\Projects\Landmark-Remark\server\Landmark-Remark.api\bin\Debug\netcoreapp2.0\Landmark-Remark.api.pdb
+C:\Users\janba\Projects\Landmark-Remark\server\Landmark-Remark.api\obj\Debug\netcoreapp2.0\Landmark-Remark.api.dll
+C:\Users\janba\Projects\Landmark-Remark\server\Landmark-Remark.api\obj\Debug\netcoreapp2.0\Landmark-Remark.api.pdb

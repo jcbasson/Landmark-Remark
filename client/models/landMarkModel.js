@@ -6,7 +6,6 @@ class LandMarkModel{
         this.latitude = null;
         this.isHovered = false;
         this.remark = null;
-        this.dateMade = null;
         this.othersRemarks = [];
     }
 }

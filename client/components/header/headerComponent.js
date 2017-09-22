@@ -3,8 +3,7 @@ import HeaderContainer from './view/headerContainer';
 
 const mapStateToProps = (state) => {
     const {user} = state;
-    const {userName} = user;
-    return {userName};
+    return {user};
 };
 
 const HeaderComponent = connect(

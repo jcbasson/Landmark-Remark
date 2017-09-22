@@ -5,12 +5,16 @@ import HeaderComponent from '../../header/headerComponent';
 import LandMarkRemarkComponent from '../../landMarkRemark/landMarkRemarkComponent';
 import LandMarkOtherRemarksComponent from '../../landMarkOthersRemark/landMarkOtherRemarksComponent';
 
-const AppPresenter =({user,isFetching, lastUpdated} ) => (
+const AppPresenter =({user,isFetching, didInvalidate} ) => (
     <main id="app-component" className="container-fluid">
-        <HeaderComponent></HeaderComponent>
+
+        {isFetching && !didInvalidate && !user && <h2>Loading...</h2>}
+        {!isFetching && !didInvalidate && user && <h2>Empty.</h2>}
+        {!isFetching && didInvalidate &&  <h2>Invalid user.</h2>}
+        {!isFetching && !didInvalidate && user && <HeaderComponent></HeaderComponent>}
         <section  className="row">
-            <LandMarkRemarkComponent></LandMarkRemarkComponent>
-            <LandMarkOtherRemarksComponent></LandMarkOtherRemarksComponent>
+            {!isFetching && !didInvalidate && user && <LandMarkRemarkComponent></LandMarkRemarkComponent>}
+            {!isFetching && !didInvalidate && user && <LandMarkOtherRemarksComponent></LandMarkOtherRemarksComponent>}
         </section>
     </main>
 );

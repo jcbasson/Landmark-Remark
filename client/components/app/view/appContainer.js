@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import {} from '../actions/appActions'
+import {requestUserMap} from '../actions/appActions'
 import AppPresenter from './appPresenter'
 
 class AppContainer extends Component {
@@ -10,8 +10,7 @@ class AppContainer extends Component {
 
     componentDidMount() {
         const {dispatch} = this.props;
-        console.log('JC AppContainer componentDidMount()' ,this.props);
-
+        dispatch(requestUserMap());
     }
 
     componentDidUpdate(prevProps) {

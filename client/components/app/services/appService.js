@@ -1,4 +1,4 @@
-import {UserLandMarksEndPoint} from '../constants/endpointSettings';
+import endpoints from '../constants/endpointSettings';
 
 export default class AppService {
     constructor(HttpGet)//inject http get from EPIC
@@ -6,7 +6,7 @@ export default class AppService {
         this.httpGet = HttpGet
     }
 
-    getUserLandmarks() {
-        return this.httpGet(UserLandMarksEndPoint);
+    getUserMap() {
+        return this.httpGet(endpoints.UserMap);
     }
 }

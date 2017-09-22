@@ -1,1 +1,4 @@
-export const UserLandMarksEndPoint = `http://localhost:50644/api/UserLandmark`;
+let endpoints = {};
+endpoints.UserMap = `http://localhost:60725/api/UserMap`;
+
+export default endpoints;
