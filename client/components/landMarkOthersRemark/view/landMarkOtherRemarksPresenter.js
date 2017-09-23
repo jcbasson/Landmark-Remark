@@ -1,13 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import OtherRemarksModel from '../../../models/otherRemarksModel';
+import OthersRemark from '../../../models/othersRemarkModel';
 
 const LandMarkOtherRemarksPresenter = ({otherRemarks}) => (
 
     <aside id="landmark-others-remarks-component" className="col-xs-12 col-sm-4 col-md-3 col-lg-3 col-xl-3">
         <header className="row"><h4>Others remarks</h4></header>
         <section id="landmark-others-remarks-list" className="row">
-            {otherRemarks.map(otherRemark => (
+            {otherRemarks.forEach(otherRemark => (
                 <article className="others-remark">
                     <header>
                         <label className="others-remark-username">{otherRemark.userName}</label>
@@ -24,9 +24,8 @@ const LandMarkOtherRemarksPresenter = ({otherRemarks}) => (
     </aside>
 );
 
-
 LandMarkOtherRemarksPresenter.propTypes = {
-    otherRemarks: PropTypes.arrayOf(OtherRemarksModel).isRequired,
+    otherRemarks: PropTypes.arrayOf(OthersRemark).isRequired,
 };
 
 export default LandMarkOtherRemarksPresenter;

@@ -1,5 +1,4 @@
-class LandMarkModel{
-
+class LandMark{
     constructor(){
         this.id = null;
         this.longitude = null;
@@ -9,5 +8,4 @@ class LandMarkModel{
         this.othersRemarks = [];
     }
 }
-
-export default LandMarkModel;
+export default LandMark;

@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import LandMarkModel from '../../../models/landMarkModel';
+import UserMapModel from '../../../models/userMapModel';
 
-const LandMarkRemarkPresenter =({landMarks} ) => (
+const LandMarkRemarkPresenter =({userMap} ) => (
     <section id="landmark-remarks-component" className="col-xs-12 col-sm-8 col-md-9 col-lg-9 col-xl-9">
         <div className="row">
             <header className="col-xs-7">
@@ -22,7 +22,7 @@ const LandMarkRemarkPresenter =({landMarks} ) => (
 
 
 LandMarkRemarkPresenter.propTypes = {
-    remarks: PropTypes.arrayOf(LandMarkModel).isRequired,
+    userMap: PropTypes.instanceOf(UserMapModel).isRequired,
 };
 
 export default LandMarkRemarkPresenter;

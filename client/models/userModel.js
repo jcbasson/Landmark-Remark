@@ -1,5 +1,4 @@
-class UserModel {
-
+class User {
     constructor()
     {
         this.id = null;
@@ -7,5 +6,4 @@ class UserModel {
         this.landMarks = [];
     }
 }
-
-export default UserModel;
+export default User;

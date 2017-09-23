@@ -1,4 +1,4 @@
-class OtherRemarksModel{
+class OthersRemark{
     constructor()
     {
         this.id = null;
@@ -7,5 +7,4 @@ class OtherRemarksModel{
         this.locationId = null;
     }
 }
-
-export default OtherRemarksModel;
+export default OthersRemark;

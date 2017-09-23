@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 //import {} from '../actions/appActions'
-import LandMarkOtherRemarksPresenter from './landMarkOtherRemarksContainer';
+import LandMarkOtherRemarksPresenter from './LandMarkOtherRemarksPresenter';
 
 class LandMarkOtherRemarksContainer extends Component {
     constructor(props) {

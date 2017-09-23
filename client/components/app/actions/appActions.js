@@ -18,10 +18,10 @@ export const requestUserLandmarksFailed = (error) => {
     }
 };
 
-export const receivedUserLandmarks = (user) => {
+export const receivedUserLandmarks = (userMap) => {
     return {
         type: RECEIVED_USER_MAP,
-        user,
+        userMap,
         receivedAt: Date.now()
     }
 };

@@ -1,25 +1,23 @@
 import {connect} from 'react-redux';
 import LandMarkOthersRemarkContainer from './view/landMarkOtherRemarksContainer';
-import LandMarkModel from "../../models/landMarkModel";
+import LandMark from "../../models/landMarkModel";
 
 const mapStateToProps = (state) => {
     return {otherRemarks: getHoveredLandMarksOthersRemarks(state)};
 };
 
 const getHoveredLandMarksOthersRemarks = (state) => {
-
-    const {user} = state;
-    const {landMarks} = user;
-
+    const {userMap} = state.appReducer;
+    const {landMarks} = userMap.user;
     if (landMarks && Array.isArray(landMarks) && landMarks.length > 0) {
         const landMarksLength = landMarks.length;
         for (let i = 0; i < landMarksLength; i++)
         {
             let landMark = landMarks[i];
 
-            if(landMark instanceof LandMarkModel)
+            if(landMark instanceof LandMark)
             {
-                if(landMark.isHovered)
+                if(!landMark.isHovered)
                 {
                     return landMark.othersRemarks;
                 }
@@ -32,6 +30,5 @@ const getHoveredLandMarksOthersRemarks = (state) => {
 const LandMarkOtherRemarksComponent = connect(
     mapStateToProps
 )(LandMarkOthersRemarkContainer);
-
 
 export default LandMarkOtherRemarksComponent;

@@ -9,5 +9,7 @@ namespace Landmark_Remark.api.Models
     {
         public int Id { get; set; }
         public string Text { get; set; }
+        public DateTime DateMade { get; set; }
+        public int LandMarkId { get; set; }
     }
 }

@@ -1,7 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import User from '../../../models/userModel';
 
-const HeaderPresenter =({user} ) => (
+const HeaderPresenter =({user}) => (
     <header id="land-remarks-header-component" className="row">
         <div className="col-xs-12 col-sm-8 col-md-9 col-lg-9 col-xl-9">
             <h1>LANDMARK REMARK</h1>
@@ -14,7 +15,7 @@ const HeaderPresenter =({user} ) => (
 
 
 HeaderPresenter.propTypes = {
-    userName: PropTypes.string.isRequired,
+    user: PropTypes.instanceOf(User),
 };
 
 export default HeaderPresenter;

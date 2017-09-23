@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Cors;
 using Microsoft.Extensions.Options;
 using Landmark_Remark.api.Models;
+using System;
 
 namespace Landmark_Remark.api.Controllers
 {
@@ -78,37 +79,41 @@ namespace Landmark_Remark.api.Controllers
             landMark.Id = 1;
             landMark.Latitude = -25.363;
             landMark.Longitude = 131.044;
-            landMark.Remark = createRemark(1, "This place is awesome!");
-            landMark.othersRemarks = createOthersLandMarks();
+            landMark.Remark = createRemark(1, "This place is awesome!", landMark.Id);
+            landMark.othersRemarks = createOthersLandMarks(landMark.Id);
 
             return landMark;
         }
 
-        public Remark createRemark(int id, string remarkText)
+        public Remark createRemark(int id, string remarkText, int locationId)
         {
             Remark remark = new Remark();
             remark.Id = id;
             remark.Text = remarkText;
+            remark.DateMade = DateTime.Now;
+            remark.LandMarkId = locationId;
             return remark;
         }
 
-        public IEnumerable<OtherRemark> createOthersLandMarks()
+        public IEnumerable<OtherRemark> createOthersLandMarks(int locationId)
         {
             IList<OtherRemark> othersRemarks = new List<OtherRemark>();
 
-            othersRemarks.Add(createOthersRemarks(1));
-            othersRemarks.Add(createOthersRemarks(2));
-            othersRemarks.Add(createOthersRemarks(3));
-            othersRemarks.Add(createOthersRemarks(4));
+            othersRemarks.Add(createOthersRemarks(1, locationId));
+            othersRemarks.Add(createOthersRemarks(2, locationId));
+            othersRemarks.Add(createOthersRemarks(3, locationId));
+            othersRemarks.Add(createOthersRemarks(4, locationId));
 
             return othersRemarks;
         }
 
-        public OtherRemark createOthersRemarks(int id)
+        public OtherRemark createOthersRemarks(int id, int locationId)
         {
             OtherRemark otherRemark = new OtherRemark();
             otherRemark.Id = id;
-            otherRemark.Remark = createRemark(id, "This place is ok");
+            otherRemark.UserName = $"Someone{id}";
+            otherRemark.LocationId = locationId;
+            otherRemark.Remark = createRemark(id, "This place is ok", locationId);
             return otherRemark;
         }
 

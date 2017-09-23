@@ -9,7 +9,7 @@ const createUserMap = (state, appProperties) => {
         state, appProperties);
 };
 
-const userLandmarks = (state = {isFetching: false, didInvalidate: false, user: {}}, action) => {
+const userLandmarks = (state = {isFetching: false, didInvalidate: false, userMap: {}}, action) => {
     switch (action.type) {
         case REQUEST_USER_MAP:
             return createUserMap(state, {
@@ -21,7 +21,7 @@ const userLandmarks = (state = {isFetching: false, didInvalidate: false, user: {
             return createUserMap(state, {
                 isFetching: false,
                 didInvalidate: false,
-                user: action.user,
+                userMap: action.userMap,
                 lastUpdated: action.receivedAt
             });
         default:
@@ -37,7 +37,7 @@ const userLandmarksErrors = (state, action) => {
     }
 };
 
-const appReducer = (state = {user: {}, isFetching: false}, action) => {
+const appReducer = (state = {userMap: {}, isFetching: false, didInvalidate: false}, action) => {
     switch (action.type) {
         case REQUEST_USER_MAP:
         case RECEIVED_USER_MAP:
