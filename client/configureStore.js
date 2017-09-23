@@ -7,12 +7,12 @@ import reduxCatch from 'redux-catch';
 import Raven from 'raven-js';
 import {SENTRY_KEY} from './constants/configSettings';
 import rootReducer from './components/root/rootReducer';
-import rootEpic from './components/root/rootEpic';
+import {rootEpic} from './components/root/rootEpic';
 
 const loggerMiddleware = createLogger();
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 Raven.config(`https://${SENTRY_KEY}@sentry.io/209498`).install();
-
+console.log('JC rootEpic', rootEpic);
 const epicMiddleware = createEpicMiddleware(rootEpic, {
     dependencies: {getJSON: ajax.getJSON, Observable}
 });

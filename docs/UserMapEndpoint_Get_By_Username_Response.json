@@ -1,0 +1,58 @@
+[
+  {
+    "user": {
+      "id": 1,
+      "userName": "You",
+      "landMarks": [
+        {
+          "id": 1,
+          "longitude": 131.044,
+          "latitude": -25.363,
+          "remark": {
+            "id": 1,
+            "text": "This place is awesome!"
+          },
+          "othersRemarks": [
+            {
+              "id": 1,
+              "userName": null,
+              "remark": {
+                "id": 1,
+                "text": "This place is ok"
+              },
+              "locationId": 0
+            },
+            {
+              "id": 2,
+              "userName": null,
+              "remark": {
+                "id": 2,
+                "text": "This place is ok"
+              },
+              "locationId": 0
+            },
+            {
+              "id": 3,
+              "userName": null,
+              "remark": {
+                "id": 3,
+                "text": "This place is ok"
+              },
+              "locationId": 0
+            },
+            {
+              "id": 4,
+              "userName": null,
+              "remark": {
+                "id": 4,
+                "text": "This place is ok"
+              },
+              "locationId": 0
+            }
+          ]
+        }
+      ]
+    },
+    "mapApiKey": "AIzaSyD8FXHuzSz2Z6CD6sxJB1CgCz-1Am8UFFc"
+  }
+]
