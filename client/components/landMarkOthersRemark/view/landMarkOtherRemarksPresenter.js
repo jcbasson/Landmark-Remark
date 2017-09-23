@@ -7,7 +7,8 @@ const LandMarkOtherRemarksPresenter = ({otherRemarks}) => (
     <aside id="landmark-others-remarks-component" className="col-xs-12 col-sm-4 col-md-3 col-lg-3 col-xl-3">
         <header className="row"><h4>Others remarks</h4></header>
         <section id="landmark-others-remarks-list" className="row">
-            {otherRemarks.forEach(otherRemark => (
+
+            {otherRemarks.map((otherRemark, index) => (
                 <article className="others-remark">
                     <header>
                         <label className="others-remark-username">{otherRemark.userName}</label>
