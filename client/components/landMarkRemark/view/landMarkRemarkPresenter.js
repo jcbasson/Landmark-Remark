@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import UserMapModel from '../../../models/userMapModel';
+import GoogleMapComponent from '../../googleMap/googleMapComponent';
 
 const LandMarkRemarkPresenter =({userMap} ) => (
     <section id="landmark-remarks-component" className="col-xs-12 col-sm-8 col-md-9 col-lg-9 col-xl-9">
@@ -13,9 +14,7 @@ const LandMarkRemarkPresenter =({userMap} ) => (
             </div>
         </div>
         <div className="row">
-            <div id="landmark-remarks-map-component">
-                <div id="landmark-remarks-map"></div>
-            </div>
+            <GoogleMapComponent></GoogleMapComponent>
         </div>
     </section>
 );

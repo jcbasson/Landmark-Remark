@@ -8,8 +8,6 @@ class LandMarkRemarkContainer extends Component {
     }
 
     componentDidMount() {
-        const {dispatch} = this.props;
-        console.log('JC LandMarkRemarkContainer componentDidMount()' ,this.props);
     }
 
     componentDidUpdate(prevProps) {

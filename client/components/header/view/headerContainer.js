@@ -8,8 +8,6 @@ class HeaderContainer extends Component {
     }
 
     componentDidMount() {
-        const {dispatch} = this.props;
-        console.log('JC HeaderContainer componentDidMount()' ,this.props);
     }
 
     componentDidUpdate(prevProps) {
