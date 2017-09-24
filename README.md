@@ -21,7 +21,8 @@ Duck pattern used for each component
 Component includes everything it needs to function: EPICs, Actions, View, Container, and additional libraries
 For now they all share the their parent "App" components Reducer
 All asynchronicity is done through EPICS (i.e ajax requests, dynamic script loading...)
-Starting and root component is the root component
+Starting point index.js in the client folder
+Planning notes can be found in Landmark-Remark\docs
 ```
 
 ## Getting Started
