@@ -37,7 +37,7 @@ Visual Studio 2017 - Install from https://www.visualstudio.com/downloads/
 
     1.Run Gitbash in the folder you would like to clone the project.
     2.In git bash run git clone https://github.com/jcbasson/Landmark-Remark.git
-    3.Using Gitbash in the root of project (cd Landmark-Remark) run Yarn 
+    3.Using Gitbash in the root of project "cd Landmark-Remark" run "Yarn" 
     4.Navigate to server in the root folder and run server.sln
     5.In Visual Studio run project to setup the api
     6.Go back to Gitbash and in the root folder run Yarn start
