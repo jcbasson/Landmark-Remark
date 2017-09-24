@@ -15,6 +15,14 @@ Back-end stack:
 ```
 .NET Core WebAPI, MSSQL
 ```
+Couple of Notes on Front-end architecure:
+```
+Duck pattern used for each component
+Component includes everything it needs to function: EPICs, Actions, View, Container, and additional libraries
+For now they all share the their parent "App" components Reducer
+All asynchronicity is done through EPICS (i.e ajax requests, dynamic script loading...)
+Starting and root component is the root component
+```
 
 ## Getting Started
 
