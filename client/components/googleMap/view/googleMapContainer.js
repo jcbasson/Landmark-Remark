@@ -1,8 +1,10 @@
 import React, {Component} from 'react'
+import ReactDOMServer from 'react-dom/server'
 import {googleMapLoading} from '../actions/googleMapActions';
 import GoogleMapPresenter from './googleMapPresenter';
 import {findUserCurrentGeolocation} from '../helpers/geolocationFinder';
-import Messages from '../constants/messages'
+import Messages from '../constants/messages';
+import RemarkComponent from '../../remark/remarkComponent';
 
 class GoogleMapContainer extends Component {
     constructor(props) {
@@ -12,7 +14,7 @@ class GoogleMapContainer extends Component {
     }
 
     loadGoogleMapLandMarks() {
-       findUserCurrentGeolocation(this.markUserCurrentLocation.bind(this), this.markUserCurrentLocationDefault.bind(this) );
+        findUserCurrentGeolocation(this.markUserCurrentLocation.bind(this), this.markUserCurrentLocationDefault.bind(this));
     }
 
     markUserCurrentLocation(position) {
@@ -34,17 +36,27 @@ class GoogleMapContainer extends Component {
         this.geoLocationHandler(geoLocationError);
     }
 
-    loadMapMarker(map, coords)
-    {
-        let marker = new google.maps.Marker({
-        position: coords,
-        title:"Location Marker"
+    addLandMarkRemark(map, marker) {
+
+        let remarkComponentHtml = ReactDOMServer.renderToStaticMarkup(<RemarkComponent remark='Testing remark'></RemarkComponent>);
+        let infowindow = new google.maps.InfoWindow({
+            content: remarkComponentHtml
         });
+        marker.addListener('click',  () => {
+            infowindow.open(map, marker);
+        });
+    }
+
+    loadMapMarker(map, coords) {
+        let marker = new google.maps.Marker({
+            position: coords,
+            title: "Location Marker"
+        });
+        this.addLandMarkRemark(this.map, marker);
         marker.setMap(map);
     }
 
-    geoLocationHandler(geoLocationError)
-    {
+    geoLocationHandler(geoLocationError) {
         switch (geoLocationError.code) {
             case geoLocationError.PERMISSION_DENIED:
                 throw new Error(Messages.ErrorMessages.GeolocationDenied);
