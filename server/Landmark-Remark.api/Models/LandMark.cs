@@ -8,6 +8,7 @@ namespace Landmark_Remark.api.Models
     public class LandMark
     {
         public int Id { get; set; }
+        public string Address { get; set; }
         public Double Longitude { get; set; }
         public Double Latitude { get; set; }
         public Remark Remark { get; set; }
