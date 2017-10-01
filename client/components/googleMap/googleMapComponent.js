@@ -3,7 +3,9 @@ import GoogleMapContainer from './view/googleMapContainer';
 
 const mapStateToProps = (state) => {
     const {userMap} = state.appReducer;
-    return {userMap};
+    const {user} = userMap;
+    const {landMarks} = user;
+    return {landMarks};
 };
 
 const GoogleMapComponent = connect(

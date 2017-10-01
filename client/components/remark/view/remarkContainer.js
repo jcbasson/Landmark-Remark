@@ -3,7 +3,6 @@ import RemarkPresenter from './RemarkPresenter'
 
 class RemarkContainer extends Component {
     constructor(props) {
-        debugger;
         super(props)
     }
 
@@ -14,7 +13,6 @@ class RemarkContainer extends Component {
     }
 
     render() {
-        debugger;
         return RemarkPresenter(this.props);
     }
 }

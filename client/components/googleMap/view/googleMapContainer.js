@@ -4,7 +4,9 @@ import {googleMapLoading} from '../actions/googleMapActions';
 import GoogleMapPresenter from './googleMapPresenter';
 import {findUserCurrentGeolocation} from '../helpers/geolocationFinder';
 import Messages from '../constants/messages';
+import mapSettings from '../constants/mapSettings';
 import RemarkComponent from '../../remark/remarkComponent';
+
 
 class GoogleMapContainer extends Component {
     constructor(props) {
@@ -14,31 +16,63 @@ class GoogleMapContainer extends Component {
     }
 
     loadGoogleMapLandMarks() {
-        findUserCurrentGeolocation(this.markUserCurrentLocation.bind(this), this.markUserCurrentLocationDefault.bind(this));
+        this.map = new google.maps.Map(this.refs.map, {
+            center: mapSettings.centerCoordinates,
+            zoom: 2
+        });
+        const landMarks = this.props.landMarks;
+        findUserCurrentGeolocation(this.markUserCurrentLocation.bind(this, this.map), this.markUserCurrentLocationDefault.bind(this, this.map));
+        this.loadUserLandmarks(this.map, landMarks);
     }
 
-    markUserCurrentLocation(position) {
+    /**
+     * @param <GoogleMap> map
+     * @param <Array<LandMark>> landMarks
+     */
+    loadUserLandmarks(map, landMarks) {
+        const landMarksLength = landMarks.length;
+        for(let i = 0; i < landMarksLength; i++)
+        {
+            const landMark = landMarks[i];
+            this.loadMapMarker(map, landMark)
+        }
+    }
+
+    /**
+     * @param <GoogleMap> map
+     * @param <GeoLocation> position
+     */
+    markUserCurrentLocation(map, position) {
         let coordinates = position.coords;
-        this.map = new google.maps.Map(this.refs.map, {
-            center: {lat: coordinates.latitude, lng: coordinates.longitude},
-            zoom: 7
+        let marker = new google.maps.Marker({
+            position: {lat: coordinates.latitude, lng: coordinates.longitude},
+            title: "Your current location Marker"
         });
-        this.loadMapMarker(this.map, coordinates);
+        marker.setMap(map);
     }
 
-    markUserCurrentLocationDefault(geoLocationError) {
+    /**
+     * @param <GoogleMap> map
+     * @param <GeoLocationError> geoLocationError
+     */
+    markUserCurrentLocationDefault(map, geoLocationError) {
         let coordinates = {lat: -37.814, lng: 144.963};
-        this.map = new google.maps.Map(this.refs.map, {
-            center: coordinates,
-            zoom: 7
+        let marker = new google.maps.Marker({
+            position: coordinates,
+            title: "Your current location Marker"
         });
-        this.loadMapMarker(this.map, coordinates);
+        marker.setMap(map);
         this.geoLocationHandler(geoLocationError);
     }
 
-    addLandMarkRemark(map, marker) {
+    /**
+     * @param <GoogleMap> map
+     * @param <GoogleMapMarker> marker
+     * @param <Remark> remark
+     */
+    addLandMarkRemark(map, marker, remark) {
 
-        let remarkComponentHtml = ReactDOMServer.renderToStaticMarkup(<RemarkComponent remark='Testing remark'></RemarkComponent>);
+        let remarkComponentHtml = ReactDOMServer.renderToStaticMarkup(<RemarkComponent remark={remark}></RemarkComponent>);
         let infowindow = new google.maps.InfoWindow({
             content: remarkComponentHtml
         });
@@ -47,15 +81,22 @@ class GoogleMapContainer extends Component {
         });
     }
 
-    loadMapMarker(map, coords) {
+    /**
+     * @param <GoogleMap> map
+     * @param <LandMark> landMark
+     */
+    loadMapMarker(map, landMark) {
         let marker = new google.maps.Marker({
-            position: coords,
+            position: {lat: landMark.latitude, lng: landMark.longitude},
             title: "Location Marker"
         });
-        this.addLandMarkRemark(this.map, marker);
+        this.addLandMarkRemark(map, marker, landMark.remark );
         marker.setMap(map);
     }
 
+    /**
+     * @param <GeoLocationError> geoLocationError
+     */
     geoLocationHandler(geoLocationError) {
         switch (geoLocationError.code) {
             case geoLocationError.PERMISSION_DENIED:
