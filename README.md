@@ -37,22 +37,26 @@ Visual Studio 2017 - Install from https://www.visualstudio.com/downloads/
 
     1.Run Gitbash in the folder you would like to clone the project.
     2.In git bash run git clone https://github.com/jcbasson/Landmark-Remark.git
-    3.Using Gitbash in the root of project run Yarn
+    3.Using Gitbash in the root of project "cd Landmark-Remark" run "Yarn" 
     4.Navigate to server in the root folder and run server.sln
     5.In Visual Studio run project to setup the api
     6.Go back to Gitbash and in the root folder run Yarn start
+    7.For now use only Google Chrome or IE Edge and run http://localhost:8080/
 
 
 ### TODOS
     1. Finish user stories 2 to 5
     2. Build Front-end tests
     3. Create separate production and development webpack configuration files
-    3. Build MSSQL Database
-    4. Build Repository Layer
-    5. Build Service Layer and hook it up to Repository Layer
-    6. Hook Api to Service layer
-    7. Build unit tests for Repository, Service and API layers respectively
-    8. Build integration test for API points
+    4. Cross Browser Test
+    5. Build MSSQL Database
+    6. Build Repository Layer
+    7. Build Service Layer and hook it up to Repository Layer
+    8. Hook Api to Service layer
+    9. Implement API Security protocols
+    10. Build unit tests for Repository, Service and API layers respectively
+    11. Build integration test for API points
+    12. Test whole application using new api
 
 ## Authors
 
