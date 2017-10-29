@@ -18,7 +18,8 @@ class GoogleMapContainer extends Component {
     loadGoogleMapLandMarks() {
         this.map = new google.maps.Map(this.refs.map, {
             center: mapSettings.centerCoordinates,
-            zoom: 2
+            zoom: 2,
+            minZoom: 2
         });
         const landMarks = this.props.landMarks;
         findUserCurrentGeolocation(this.markUserCurrentLocation.bind(this, this.map), this.markUserCurrentLocationDefault.bind(this, this.map));
