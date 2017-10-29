@@ -3,7 +3,7 @@ class LandMark{
         this.id = null;
         this.longitude = null;
         this.latitude = null;
-        this.isHovered = false;
+        this.hasFocus = false;
         this.remark = null;
         this.othersRemarks = [];
     }

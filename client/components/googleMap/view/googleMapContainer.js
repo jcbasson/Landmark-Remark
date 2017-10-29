@@ -1,6 +1,7 @@
 import React, {Component} from 'react'
 import ReactDOMServer from 'react-dom/server'
 import {googleMapLoading} from '../actions/googleMapActions';
+import {updateLandMarkHasFocus} from '../../landMarkRemark/actions/landMarkRemarkActions';
 import GoogleMapPresenter from './googleMapPresenter';
 import {findUserCurrentGeolocation} from '../helpers/geolocationFinder';
 import Messages from '../constants/messages';
@@ -16,14 +17,16 @@ class GoogleMapContainer extends Component {
     }
 
     loadGoogleMapLandMarks() {
+        //Create the google map
         this.map = new google.maps.Map(this.refs.map, {
             center: mapSettings.centerCoordinates,
             zoom: 2,
             minZoom: 2
         });
-        const landMarks = this.props.landMarks;
-        findUserCurrentGeolocation(this.markUserCurrentLocation.bind(this, this.map), this.markUserCurrentLocationDefault.bind(this, this.map));
-        this.loadUserLandmarks(this.map, landMarks);
+        //Gets the users current location, passing in the success handler and the error handler with default locations to use
+        findUserCurrentGeolocation(this.markUserCurrentLocation.bind(this, this.map), this.markUserCurrentLocation.bind(this, this.map, {lat: -37.814, lng: 144.963}));
+        //Load the user map with the landmarks
+        this.loadUserLandmarks(this.map, this.props.landMarks);
     }
 
     /**
@@ -42,8 +45,9 @@ class GoogleMapContainer extends Component {
     /**
      * @param <GoogleMap> map
      * @param <GeoLocation> position
+     * @param <GeoLocationError> geoLocationError
      */
-    markUserCurrentLocation(map, position) {
+    markUserCurrentLocation(map, position, geoLocationError) {
         let coordinates = position.coords;
         let marker = new google.maps.Marker({
             position: {lat: coordinates.latitude, lng: coordinates.longitude},
@@ -54,31 +58,18 @@ class GoogleMapContainer extends Component {
 
     /**
      * @param <GoogleMap> map
-     * @param <GeoLocationError> geoLocationError
-     */
-    markUserCurrentLocationDefault(map, geoLocationError) {
-        let coordinates = {lat: -37.814, lng: 144.963};
-        let marker = new google.maps.Marker({
-            position: coordinates,
-            title: "Your current location Marker"
-        });
-        marker.setMap(map);
-        this.geoLocationHandler(geoLocationError);
-    }
-
-    /**
-     * @param <GoogleMap> map
      * @param <GoogleMapMarker> marker
-     * @param <Remark> remark
+     * @param <LandMark> landMark
      */
-    addLandMarkRemark(map, marker, remark) {
-
-        let remarkComponentHtml = ReactDOMServer.renderToStaticMarkup(<RemarkComponent remark={remark}></RemarkComponent>);
+    addLandMarkRemark(map, marker, landMark) {
+        const {dispatch} = this.props;
+        let remarkComponentHtml = ReactDOMServer.renderToStaticMarkup(<RemarkComponent remark={landMark.remark}></RemarkComponent>);
         let infowindow = new google.maps.InfoWindow({
             content: remarkComponentHtml
         });
         marker.addListener('click',  () => {
             infowindow.open(map, marker);
+            dispatch(updateLandMarkHasFocus(landMark.id));
         });
     }
 
@@ -91,7 +82,7 @@ class GoogleMapContainer extends Component {
             position: {lat: landMark.latitude, lng: landMark.longitude},
             title: "Location Marker"
         });
-        this.addLandMarkRemark(map, marker, landMark.remark );
+        this.addLandMarkRemark(map, marker, landMark );
         marker.setMap(map);
     }
 
