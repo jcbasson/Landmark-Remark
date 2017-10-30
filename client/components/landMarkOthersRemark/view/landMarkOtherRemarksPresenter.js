@@ -8,7 +8,7 @@ const LandMarkOtherRemarksPresenter = ({otherRemarks}) => (
         <header className="row"><h4>Others remarks</h4></header>
         <section id="landmark-others-remarks-list" className="row">
 
-            {otherRemarks.map((otherRemark, index) => (
+            {otherRemarks && otherRemarks.length > 0 && otherRemarks.map((otherRemark, index) => (
                 <article key={index} className="others-remark">
                     <header>
                         <label className="others-remark-username">{otherRemark.userName}</label>

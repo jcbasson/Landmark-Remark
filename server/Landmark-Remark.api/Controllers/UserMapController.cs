@@ -13,7 +13,7 @@ namespace Landmark_Remark.api.Controllers
     {
 
         private IList<LandMark> Cities = new List<LandMark> {
-        
+
             new LandMark()
             {
                 Id = 1,
@@ -124,7 +124,7 @@ namespace Landmark_Remark.api.Controllers
             UserMap userMap = new UserMap();
             userMap.MapApiKey = ClientSettings.GoogleMapsApiKey;
             userMap.User = createUser();
-            
+
             return userMap;
         }
 
@@ -142,21 +142,21 @@ namespace Landmark_Remark.api.Controllers
             foreach (var landMark in Cities)
             {
                 landMark.Remark = createRemark(1, $"{landMark.Address} is awesome!", landMark.Id);
-                landMark.othersRemarks = createOthersLandMarks(landMark.Id);
-            }    
+                landMark.othersRemarks = createOthersLandMarks(landMark.Id, landMark.Address);
+            }
             return Cities;
         }
 
         public LandMark createLandMark()
         {
             LandMark landMark = new LandMark();
-        
+
             landMark.Id = 1;
             landMark.Address = "Sydney, NSW, Australia";
             landMark.Latitude = -33.865143;
             landMark.Longitude = 151.209900;
             landMark.Remark = createRemark(1, $"{landMark.Address} is awesome!", landMark.Id);
-            landMark.othersRemarks = createOthersLandMarks(landMark.Id);
+            landMark.othersRemarks = createOthersLandMarks(landMark.Id, landMark.Address);
 
             return landMark;
         }
@@ -171,25 +171,25 @@ namespace Landmark_Remark.api.Controllers
             return remark;
         }
 
-        public IEnumerable<OtherRemark> createOthersLandMarks(int locationId)
+        public IEnumerable<OtherRemark> createOthersLandMarks(int locationId, string locationAddress)
         {
             IList<OtherRemark> othersRemarks = new List<OtherRemark>();
 
-            othersRemarks.Add(createOthersRemarks(1, locationId));
-            othersRemarks.Add(createOthersRemarks(2, locationId));
-            othersRemarks.Add(createOthersRemarks(3, locationId));
-            othersRemarks.Add(createOthersRemarks(4, locationId));
+            othersRemarks.Add(createOthersRemarks(1, locationId, locationAddress));
+            othersRemarks.Add(createOthersRemarks(2, locationId, locationAddress));
+            othersRemarks.Add(createOthersRemarks(3, locationId, locationAddress));
+            othersRemarks.Add(createOthersRemarks(4, locationId, locationAddress));
 
             return othersRemarks;
         }
 
-        public OtherRemark createOthersRemarks(int id, int locationId)
+        public OtherRemark createOthersRemarks(int id, int locationId, string locationAddress)
         {
             OtherRemark otherRemark = new OtherRemark();
             otherRemark.Id = id;
             otherRemark.UserName = $"Someone{id}";
             otherRemark.LocationId = locationId;
-            otherRemark.Remark = createRemark(id, "This place is ok", locationId);
+            otherRemark.Remark = createRemark(id, $"This place {locationAddress} is ok", locationId);
             return otherRemark;
         }
 

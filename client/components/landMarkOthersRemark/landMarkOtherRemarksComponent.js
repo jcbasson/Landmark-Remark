@@ -17,7 +17,7 @@ const getHoveredLandMarksOthersRemarks = (state) => {
 
             if(landMark instanceof LandMark)
             {
-                if(!landMark.isHovered)
+                if(landMark.hasFocus)
                 {
                     return landMark.othersRemarks;
                 }
