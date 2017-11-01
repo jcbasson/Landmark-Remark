@@ -7,7 +7,6 @@ import {findUserCurrentGeolocation} from '../helpers/geolocationFinder';
 import mapSettings from '../constants/mapSettings';
 import RemarkComponent from '../../remark/remarkComponent';
 
-
 class GoogleMapContainer extends Component {
     constructor(props) {
         super(props)
@@ -24,7 +23,10 @@ class GoogleMapContainer extends Component {
             minZoom: 2
         });
         //Gets the users current location, passing in the success handler and the error handler with default locations to use
-        findUserCurrentGeolocation(this.markUserCurrentLocation.bind(this, this.map), this.markUserCurrentLocation.bind(this, this.map, {lat: -37.814, lng: 144.963}));
+        findUserCurrentGeolocation(this.markUserCurrentLocation.bind(this, this.map), this.markUserCurrentLocation.bind(this, this.map, {
+            lat: -37.814,
+            lng: 144.963
+        }));
         //Load the user map with the landmarks
         this.loadUserLandmarks(this.map, this.props.landMarks);
     }
@@ -35,8 +37,7 @@ class GoogleMapContainer extends Component {
      */
     loadUserLandmarks(map, landMarks) {
         const landMarksLength = landMarks.length;
-        for(let i = 0; i < landMarksLength; i++)
-        {
+        for (let i = 0; i < landMarksLength; i++) {
             const landMark = landMarks[i];
             this.loadMapMarker(map, landMark)
         }
@@ -64,7 +65,7 @@ class GoogleMapContainer extends Component {
             position: {lat: landMark.latitude, lng: landMark.longitude},
             title: "Location Marker"
         });
-        this.addLandMarkRemark(map, marker, landMark );
+        this.addLandMarkRemark(map, marker, landMark);
         marker.setMap(map);
     }
 
@@ -74,30 +75,30 @@ class GoogleMapContainer extends Component {
      * @param <LandMark> landMark
      */
     addLandMarkRemark(map, marker, landMark) {
-        let remarkComponentHtml = ReactDOMServer.renderToStaticMarkup(<RemarkComponent remark={landMark.remark}></RemarkComponent>);
+        const remarkComponent = new RemarkComponent(landMark.remark);
         let infowindow = new google.maps.InfoWindow({
-            content: remarkComponentHtml
+            content: remarkComponent.element
         });
-        this.addEvents(map, infowindow, marker, landMark )
+        this.addEvents(map, infowindow, remarkComponent, marker, landMark)
     }
 
     /**
      * @desc Adds events to google map components
      * @param <GoogleMap> map
      * @param <InfoWindow> infowindow
+     * @param <RemarkComponent> remarkComponent
      * @param <GoogleMapMarker> marker
      * @param <LandMark> landMark
      */
-    addEvents(map, infowindow, marker, landMark)
-    {
+    addEvents(map, infowindow, remarkComponent, marker, landMark) {
         const {dispatch} = this.props;
-        infowindow.addListener('closeclick',() => {
+        infowindow.addListener('closeclick', () => {
             //Reset the open remark window
             this.currentOpenRemarkWindow = null;
             //Update the remark focus status to false
             dispatch(updateLandMarkHasFocus(landMark.id, false));
         });
-        marker.addListener('click',  () => {
+        marker.addListener('click', () => {
             //Close other previously open remark window
             this.closeOpenRemarkWindow();
             //Open remark window
@@ -107,12 +108,17 @@ class GoogleMapContainer extends Component {
             //Update the remark focus status to true
             dispatch(updateLandMarkHasFocus(landMark.id, true));
         });
+        google.maps.event.addDomListener(remarkComponent.btnEditRemarkElement, "click", () => {
+            remarkComponent.setSaveMode();
+        });
+
+        google.maps.event.addDomListener(remarkComponent.btnSaveRemarkElement, "click", () => {
+            remarkComponent.setDisplayMode();
+        });
     }
 
-    closeOpenRemarkWindow()
-    {
-        if(this.currentOpenRemarkWindow)
-        {
+    closeOpenRemarkWindow() {
+        if (this.currentOpenRemarkWindow) {
             this.currentOpenRemarkWindow.close();
             this.currentOpenRemarkWindow = null;
         }

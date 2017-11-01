@@ -48,7 +48,17 @@ div, section, aside {
     background-color: grey;
 }
 
-#landmark-others-remarks-component
+.hide
 {
+    display: none;
+}
+
+.remark-component > textarea
+{
+    display: block;
+    height: auto;
+    min-height: 100px;
+    margin: 10px;
+    width: 300px;
 }
 

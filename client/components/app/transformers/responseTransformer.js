@@ -11,7 +11,7 @@ const ResponseTransformer = {};
 
 ResponseTransformer.userMap = (response) => {
     let userMap = new UserMap();
-    if (response && response instanceof Object) {
+    if (response) {
         if (response.mapApiKey) {
             userMap.mapApiKey = response.mapApiKey
         }
@@ -60,12 +60,13 @@ const createLandMarksFromResponse = (responseLandMarks) => {
     return landMarks;
 };
 
-const createRemarkFromResponse = (responseLandMark) => {
-    if (responseLandMark.id && responseLandMark.text && responseLandMark.dateMade && responseLandMark.landMarkId) {
+const createRemarkFromResponse = (responseRemark) => {
+    if (responseRemark.id && responseRemark.text && responseRemark.dateMade && responseRemark.landMarkId) {
         let remark = new Remark();
-        remark.dateMade = moment(responseLandMark.dateMade).format(DateFormats.ThreeLetterAbbrevMonth_Day_TwoDigitYear);
-        remark.text = responseLandMark.text;
-        remark.landMarkId = responseLandMark.landMarkId;
+        remark.id = responseRemark.id;
+        remark.dateMade = moment(responseRemark.dateMade).format(DateFormats.ThreeLetterAbbrevMonth_Day_TwoDigitYear);
+        remark.text = responseRemark.text;
+        remark.landMarkId = responseRemark.landMarkId;
         return remark;
     }
     else {
