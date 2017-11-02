@@ -19,7 +19,6 @@ const LandMarkRemarkPresenter =({userMap} ) => (
     </section>
 );
 
-
 LandMarkRemarkPresenter.propTypes = {
     userMap: PropTypes.instanceOf(UserMapModel).isRequired,
 };
