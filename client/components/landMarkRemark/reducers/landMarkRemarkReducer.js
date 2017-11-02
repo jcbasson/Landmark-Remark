@@ -1,5 +1,6 @@
 import {
-    UPDATE_LANDMARK_FOCUSED_ON
+    UPDATE_LANDMARK_FOCUSED_ON,
+    UPDATE_LANDMARK_REMARK
 } from '../constants/actionTypes'
 
 /**
@@ -8,12 +9,19 @@ import {
  * @param <Object> action
  */
 export const landMarkRemark = (state = {userMap: {}}, action) => {
+    let {userMap} = state;
     switch (action.type) {
         case UPDATE_LANDMARK_FOCUSED_ON:
-            let {userMap} = state;
             //Set the land mark that has focus
             userMap.user.landMarks = setLandMarkHasFocus(action.landMarkId, userMap.user.landMarks, action.hasFocus);
-            //Create the new state with the landmark that has focus
+            //Create the new state
+            return createNextState(state, {
+                userMap
+            });
+        case UPDATE_LANDMARK_REMARK:
+            //Update the land mark remark text
+            userMap.user.landMarks = updateRemark(action.landMarkId, userMap.user.landMarks, action.remarkText);
+            //Create the new state
             return createNextState(state, {
                 userMap
             });
@@ -39,6 +47,25 @@ const setLandMarkHasFocus = (landMarkId, landMarks, hasFocus) => {
         else
         {
             landMark.hasFocus = false;
+        }
+    }
+    return landMarks;
+};
+
+/**
+ * @desc Loops through the user landmarks updates the selected landmarks remark text
+ * @param <Integer> landMarkId
+ * @param <Array<LandMarkModel>> landMarks
+ * @param <String> remarkText
+ */
+const updateRemark = (landMarkId, landMarks, remarkText) => {
+    const landMarksLength = landMarks.length;
+    for (let i = 0; i < landMarksLength; i++) {
+        const landMark = landMarks[i];
+        if(landMark.id === landMarkId)
+        {
+            landMark.remark.text = remarkText;
+            return landMarks;
         }
     }
     return landMarks;
