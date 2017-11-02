@@ -10,7 +10,8 @@ import {
     MARK_USER_CURRENT_LOCATION
 } from '../../googleMap/constants/actionTypes';
 import {
-    UPDATE_LANDMARK_FOCUSED_ON
+    UPDATE_LANDMARK_FOCUSED_ON,
+    UPDATE_LANDMARK_REMARK
 }from '../../landMarkRemark/constants/actionTypes';
 
 import {
@@ -21,7 +22,6 @@ import {
     landMarkRemark
 }from '../../landMarkRemark/reducers/landMarkRemarkReducer'
 
-
 const userMap = (state = {isFetching: false, didInvalidate: false, userMap: {}}, action) => {
     switch (action.type) {
         case REQUEST_USER_MAP:
@@ -29,7 +29,6 @@ const userMap = (state = {isFetching: false, didInvalidate: false, userMap: {}},
                 isFetching: true,
                 didInvalidate: false
             });
-
         case RECEIVED_USER_MAP:
             return createNextState(state, {
                 isFetching: false,
@@ -37,16 +36,10 @@ const userMap = (state = {isFetching: false, didInvalidate: false, userMap: {}},
                 userMap: action.userMap,
                 lastUpdated: action.receivedAt
             });
-        default:
-            return state
-    }
-};
-
-const userMapErrors = (state, action) => {
-    switch (action.type) {
         case REQUEST_USER_MAP_FAILED:
             return createNextState(state, {latestError: action.payload});
-
+        default:
+            return state
     }
 };
 
@@ -55,14 +48,12 @@ const createNextState = (state, appProperties) => {
         state, appProperties);
 };
 
-
 const appReducer = (state = {userMap: {}, isFetching: false, didInvalidate: false}, action) => {
     switch (action.type) {
         case REQUEST_USER_MAP:
         case RECEIVED_USER_MAP:
-            return userMap(state, action);
         case REQUEST_USER_MAP_FAILED:
-            return userMapErrors(state, action);
+            return userMap(state, action);
         case GOOGLE_MAP_LOADING_SUCCESS:
         case GOOGLE_MAP_LOADING_FAILED:
         case GOOGLE_MAP_LOADING:
@@ -70,10 +61,10 @@ const appReducer = (state = {userMap: {}, isFetching: false, didInvalidate: fals
         case MARK_USER_CURRENT_LOCATION:
             return googleMapMarking(state, action);
         case UPDATE_LANDMARK_FOCUSED_ON:
+        case UPDATE_LANDMARK_REMARK:
             return landMarkRemark(state, action);
         default:
             return state
     }
 };
-
 export default appReducer;
