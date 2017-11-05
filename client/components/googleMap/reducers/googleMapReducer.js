@@ -4,6 +4,7 @@ import {
     GOOGLE_MAP_LOADING,
     MARK_USER_CURRENT_LOCATION
 } from '../constants/actionTypes'
+import UserMap from '../../../models/userMapModel';
 
 export const googleMapLoadingState = (state = {userMap: {}}, action) => {
     switch (action.type) {
@@ -11,9 +12,11 @@ export const googleMapLoadingState = (state = {userMap: {}}, action) => {
         case GOOGLE_MAP_LOADING_FAILED:
         case GOOGLE_MAP_LOADING:
             let {userMap} = state;
-            userMap.googleMapIsLoading = action.googleMapIsLoading;
-            userMap.googleMapLoaded = action.googleMapLoaded;
-            return createNextState(state, {
+            userMap = createNextState(UserMap, userMap, {
+                googleMapIsLoading: action.googleMapIsLoading,
+                googleMapLoaded: action.googleMapLoaded
+            });
+            return createNextState(Object, state, {
                 userMap
             });
         default:
@@ -25,8 +28,8 @@ export const googleMapMarking = (state = {userMap: {}}, action) => {
     switch (action.type) {
         case MARK_USER_CURRENT_LOCATION:
             let {userMap} = state;
-            userMap.currentLocation = action.currentLocation;
-            return createNextState(state, {
+            userMap = createNextState(UserMap, userMap, {currentLocation: action.currentLocation});
+            return createNextState(Object, state, {
                 userMap
             });
         default:
@@ -34,7 +37,13 @@ export const googleMapMarking = (state = {userMap: {}}, action) => {
     }
 };
 
-const createNextState = (state, appProperties) => {
-    return Object.assign({},
+/**
+ * @desc Creates a copy of a specified TYPE object with the specified properties
+ * @param <Type> type
+ * @param <Object> state
+ * @param <Object> appProperties
+ */
+const createNextState = (type, state, appProperties) => {
+    return Object.assign(new type,
         state, appProperties);
 };

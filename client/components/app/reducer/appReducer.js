@@ -11,6 +11,7 @@ import {
 } from '../../googleMap/constants/actionTypes';
 import {
     UPDATE_LANDMARK_FOCUSED_ON,
+    CREATE_LANDMARK,
     UPDATE_LANDMARK_REMARK
 }from '../../landMarkRemark/constants/actionTypes';
 
@@ -61,6 +62,7 @@ const appReducer = (state = {userMap: {}, isFetching: false, didInvalidate: fals
         case MARK_USER_CURRENT_LOCATION:
             return googleMapMarking(state, action);
         case UPDATE_LANDMARK_FOCUSED_ON:
+        case CREATE_LANDMARK:
         case UPDATE_LANDMARK_REMARK:
             return landMarkRemark(state, action);
         default:

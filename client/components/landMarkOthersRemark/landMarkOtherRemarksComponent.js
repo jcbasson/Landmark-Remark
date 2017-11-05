@@ -11,16 +11,10 @@ const getHoveredLandMarksOthersRemarks = (state) => {
     const {landMarks} = userMap.user;
     if (landMarks && Array.isArray(landMarks) && landMarks.length > 0) {
         const landMarksLength = landMarks.length;
-        for (let i = 0; i < landMarksLength; i++)
-        {
+        for (let i = 0; i < landMarksLength; i++) {
             let landMark = landMarks[i];
-
-            if(landMark instanceof LandMark)
-            {
-                if(landMark.hasFocus)
-                {
-                    return landMark.othersRemarks;
-                }
+            if (landMark.hasFocus) {
+                return landMark.othersRemarks;
             }
         }
     }

@@ -1,6 +1,7 @@
 import {
     UPDATE_LANDMARK_FOCUSED_ON,
-    UPDATE_LANDMARK_REMARK
+    UPDATE_LANDMARK_REMARK,
+    CREATE_LANDMARK
 } from '../constants/actionTypes'
 
 /**
@@ -13,6 +14,18 @@ export const updateLandMarkHasFocus = (landMarkId, hasFocus) => {
         type: UPDATE_LANDMARK_FOCUSED_ON,
         landMarkId,
         hasFocus
+    }
+};
+
+/**
+ * @param <LandMark> landMark
+ * @param <String> remarkText
+ * @returns {{type: String, landMark: LandMark}}
+ */
+export const createLandmark = (landMark) => {
+    return {
+        type: CREATE_LANDMARK,
+        landMark
     }
 };
 

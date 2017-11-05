@@ -7,9 +7,9 @@ namespace Landmark_Remark.api.Models
 {
     public class OtherRemark
     {
-        public int Id { get; set; }
+        public string Id { get; set; }
         public string UserName { get; set; }
         public Remark Remark { get; set; }
-        public int LocationId { get; set; }
+        public string LocationId { get; set; }
     }
 }
