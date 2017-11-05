@@ -2,10 +2,10 @@
 
 Full stack application that allows the user the following user stories:
 1.	As a user (of the application) I can see my current location on a map
-2.	As a user I can save a short note at my current location
+2.	As a user I can save a short note at any selected location
 3.	As a user I can see notes that I have saved at the location they were saved on the map
 4.	As a user I can see the location, text, and user-name of notes other users have saved
-5.	As a user I have the ability to search for a note based on contained text or user-name.
+5.	As a user I have the ability edit my existing notes.
 
 Front-end stack:
 ```
@@ -45,18 +45,19 @@ Visual Studio 2017 - Install from https://www.visualstudio.com/downloads/
 
 
 ### TODOS
-    1. Finish user stories 2 to 5
-    2. Build Front-end tests
-    3. Create separate production and development webpack configuration files
-    4. Cross Browser Test
-    5. Build MSSQL Database
-    6. Build Repository Layer
-    7. Build Service Layer and hook it up to Repository Layer
-    8. Hook Api to Service layer
-    9. Implement API Security protocols
+    1. Allow the user create a note at their current location
+    2. Build in defensive strategies for negative situations i.e. server is down
+    3. Build Front-end tests
+    4. Integrate my front-end code to a .NET SPA Web Application to alow streamlining of the dev process.
+    5. Build in SignalR Middleware to allow real time updating of other users remarks
+    6. Build MSSQL Database
+    7. Build Repository Layer
+    8. Build Service Layer and hook it up to Repository Layer
+    9. Hook Api to Service layer
+    10. Implement API Security protocols
     10. Build unit tests for Repository, Service and API layers respectively
     11. Build integration test for API points
-    12. Test whole application using new api
+    12. Test whole application
 
 ## Authors
 
