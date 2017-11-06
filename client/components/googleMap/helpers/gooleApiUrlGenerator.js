@@ -1,16 +1,16 @@
 import GoogleApiOptions from '../models/googleApiOptions'
-import Messages from '../constants/messages'
+import ErrorMessages from '../../../constants/errorMessages'
 
 export const GenerateGoogleApiUrl = (googleApiOptions) => {
 
     if (!(googleApiOptions instanceof GoogleApiOptions)) {
-        throw new Error(Messages.ErrorMessages.InvalidObjectProvidedMustBeObjectOfGoogleApiOptions);
+        throw new Error(ErrorMessages.InvalidObjectProvidedMustBeObjectOfGoogleApiOptions);
     }
     if (!googleApiOptions.url) {
-        throw new Error(Messages.ErrorMessages.NoGoogleApiUrlProvided);
+        throw new Error(ErrorMessages.NoGoogleApiUrlProvided);
     }
     if (!googleApiOptions.key) {
-        throw new Error(Messages.ErrorMessages.NoGoogleApiKeyProvided);
+        throw new Error(ErrorMessages.NoGoogleApiKeyProvided);
     }
 
     const googleApiUrlKeys = Object.keys(googleApiOptions).slice(1);

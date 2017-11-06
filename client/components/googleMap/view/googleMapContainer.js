@@ -32,11 +32,6 @@ class GoogleMapContainer extends Component {
             zoom: 2,
             minZoom: 2
         });
-        //Gets the users current location, passing in the success handler and the error handler with default locations to use
-        findUserCurrentGeolocation(this.markUserCurrentLocation.bind(this, this.map), this.markUserCurrentLocation.bind(this, this.map, {
-            lat: -37.814,
-            lng: 144.963
-        }));
         //Load the user map with the landmarks
         this.loadUserLandmarks(this.map, this.props.landMarks);
         this.loadMapEvents(this.map);
@@ -46,8 +41,7 @@ class GoogleMapContainer extends Component {
      * @desc Load events for the map
      * @param <GoogleMap> map
      */
-    loadMapEvents(map)
-    {
+    loadMapEvents(map) {
         map.addListener('click', (e) => {
             //Google maps even object with functions for extracting latitude and longitude
             const eventLatLng = e.latLng;
@@ -67,6 +61,8 @@ class GoogleMapContainer extends Component {
             const landMark = landMarks[i];
             this.loadMapMarker(map, landMark, false)
         }
+        //Gets the users current location, passing in the success handler and the error handler with default locations to use
+        findUserCurrentGeolocation(this.markUserCurrentLocation.bind(this, map), this.markUserCurrentLocation.bind(this, map, mapSettings.defaultUserCoordinates));
     }
 
     /**
@@ -76,11 +72,7 @@ class GoogleMapContainer extends Component {
      */
     markUserCurrentLocation(map, position) {
         const coordinates = position.coords;
-        const marker = new google.maps.Marker({
-            position: {lat: coordinates.latitude, lng: coordinates.longitude},
-            title: "Your current location Marker"
-        });
-        marker.setMap(map);
+        this.createNewLandMark({lat: coordinates.latitude, lng: coordinates.longitude}, map);
     }
 
     /**

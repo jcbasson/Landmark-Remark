@@ -91,6 +91,7 @@ class RemarkComponent {
     createRemarkTextEditElement(remark, txtRemarkId) {
         const txtRemarkElement = document.createElement("textarea");
         txtRemarkElement.setAttribute('id', txtRemarkId);
+        txtRemarkElement.setAttribute('placeholder', 'Say something about this location...');
         txtRemarkElement.textContent = remark.text;
         return txtRemarkElement;
     }
