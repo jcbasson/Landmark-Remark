@@ -173,9 +173,19 @@ class GoogleMapContainer extends Component {
         //Close other previously open remark window
         this.closeCurrentOpenRemarkWindow();
         //Create new landmark
-        const landMark = modelFactory.createLandMark(`LandMark_${lat}_${lng}`, lng, lat, true);
+        const landMark = modelFactory.createLandMark({
+            id: `LandMark_${lat}_${lng}`,
+            longitude: lng,
+            latitude: lat,
+            hasFocus: true
+        });
         //Create remark
-        const remark = modelFactory.createRemark(`Remark_${landMark.id}_${randomId}`, '', Date.now(), landMark.id);
+        const remark = modelFactory.createRemark({
+            id: `Remark_${landMark.id}_${randomId}`,
+            text: '',
+            dateMade: Date.now(),
+            landMarkId: landMark.id
+        });
         //Set landmark remark
         landMark.remark = remark;
         //Focus map over landmark location
