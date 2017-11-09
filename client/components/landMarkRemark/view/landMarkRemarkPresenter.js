@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import UserMapModel from '../../../models/userMapModel';
 import GoogleMapComponent from '../../googleMap/googleMapComponent';
 
-const LandMarkRemarkPresenter =({userMap, modelFactory} ) => (
+const LandMarkRemarkPresenter =({userMap, modelService} ) => (
     <section id="landmark-remarks-component" className="col-xs-12 col-sm-8 col-md-9 col-lg-9 col-xl-9">
         <div className="row">
             <header className="col-xs-7">
@@ -14,7 +14,7 @@ const LandMarkRemarkPresenter =({userMap, modelFactory} ) => (
             </div>
         </div>
         <div className="row">
-            <GoogleMapComponent modelFactory={modelFactory}></GoogleMapComponent>
+            <GoogleMapComponent modelService={modelService}></GoogleMapComponent>
         </div>
     </section>
 );

@@ -169,18 +169,18 @@ class GoogleMapContainer extends Component {
         //Create new remark
         const randomId = Math.random();
         //Set model factory and event dispatch object
-        const {modelFactory, dispatch} = this.props;
+        const {modelService, dispatch} = this.props;
         //Close other previously open remark window
         this.closeCurrentOpenRemarkWindow();
         //Create new landmark
-        const landMark = modelFactory.createLandMark({
+        const landMark = modelService.createLandMark({
             id: `LandMark_${lat}_${lng}`,
             longitude: lng,
             latitude: lat,
             hasFocus: true
         });
         //Create remark
-        const remark = modelFactory.createRemark({
+        const remark = modelService.createRemark({
             id: `Remark_${landMark.id}_${randomId}`,
             text: '',
             dateMade: Date.now(),

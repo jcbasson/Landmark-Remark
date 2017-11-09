@@ -1,8 +1,8 @@
 /**
- * @class ResponseTransformer
+ * @class ResponseTransformerService
  * @property <ModelsFactory> ModelsFactory
  */
-class ResponseTransformer {
+class ResponseTransformerService {
 
     constructor(ModelsFactory) {
         this.modelsFactory = ModelsFactory;
@@ -14,7 +14,7 @@ class ResponseTransformer {
      * @returns <UserMap>
      */
     createUserMapFromResponse(response) {
-        if (!response || !response.user || !response.mapApiKey) throw Error('ResponseTransformer.createUserMapFromResponse : Invalid UserMap Response');
+        if (!response || !response.user || !response.mapApiKey) throw Error('ResponseTransformerService.createUserMapFromResponse : Invalid UserMap Response');
         response.user = this.createUserFromResponse(response.user);
         return this.modelsFactory.createUserMap(response);
     };
@@ -64,5 +64,5 @@ class ResponseTransformer {
         return otherRemarks;
     };
 }
-export default ResponseTransformer;
+export default ResponseTransformerService;
 

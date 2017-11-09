@@ -1,23 +1,31 @@
-import moment from 'moment';
-import UserMap from '../models/userMapModel';
-import User from '../models/userMapModel';
-import LandMark from '../models/landMarkModel';
-import Remark from '../models/remarkModel';
-import OthersRemark from '../models/othersRemarkModel';
-import DateFormats from '../constants/dateFormats'
-
 /**
- * @class ModelsFactory
+ * @class ModelService
+ * @property <Moment constructor> Moment
+ * @property <UserMap constructor> UserMap
+ * @property <User constructor> User
+ * @property <LandMark constructor> LandMark
+ * @property <Remark constructor> Remark
+ * @property <OthersRemark constructor> OthersRemark
+ * @property <DateFormats constructor> DateFormats
  */
-class ModelsFactory {
+class ModelService {
+    constructor(Moment, UserMap, User, LandMark, Remark, OthersRemark, DateFormats) {
+        this.Moment = Moment;
+        this.UserMap = UserMap;
+        this.User = User;
+        this.LandMark = LandMark;
+        this.Remark = Remark;
+        this.OthersRemark = OthersRemark;
+        this.DateFormats = DateFormats;
+    }
 
     /**
      * @desc Creates new User object
      * @param <Object{ mapApiKey: String, user: User }>
      * @returns <UserMap>
      */
-    createUserMap({mapApiKey, user})
-    {
+    createUserMap({mapApiKey, user}) {
+        const {UserMap, User} = this;
         if (!mapApiKey) throw new Error('UserMap failed to create: No mapApiKey provided');
         if (!user && user instanceof User) throw new Error('User failed to create: No user or invalid user provided');
         const userMap = new UserMap();
@@ -31,24 +39,25 @@ class ModelsFactory {
      * @param <Object{ id: String, userName: String, landMarks:  Array<LandMark>> }>
      * @returns <User>
      */
-    createUser({id, userName, landMarks})
-    {
+    createUser({id, userName, landMarks}) {
         if (!id) throw new Error('User failed to create: No id provided');
         if (!userName) throw new Error('User failed to create: No userName provided');
         if (landMarks && !Array.isArray(landMarks)) throw new Error('User failed to create: landMarks is not an array');
-
+        const {User} = this;
         const user = new User();
         user.id = id;
         user.userName = userName;
-        user.landMarks = landMarks? landMarks : [];
+        user.landMarks = landMarks ? landMarks : [];
         return user;
     }
+
     /**
      * @desc Creates new LandMark object
      * @param <Object{ id: String, longitude: Decimal, latitude: Decimal, hasFocus: Boolean, remark: Remark, othersRemarks: Array<OthersRemark>> }>
      * @returns <LandMark>
      */
     createLandMark({id, longitude, latitude, hasFocus, remark, othersRemarks}) {
+        const {LandMark, Remark} = this;
         if (!id) throw new Error('LandMark failed to create: No id provided');
         if (!longitude || isNaN(longitude)) throw new Error('LandMark failed to create: No longitude or invalid longitude provided');
         if (!latitude || isNaN(latitude)) throw new Error('LandMark failed to create: No latitude or invalid latitude provided');
@@ -71,14 +80,15 @@ class ModelsFactory {
      * @returns <Remark>
      */
     createRemark({id, text, dateMade, landMarkId}) {
+        const {Moment, Remark, DateFormats} = this;
         if (!id) throw new Error('Remark failed to create: No id provided');
-        if (!dateMade || !moment(dateMade).isValid()) throw new Error('Remark failed to create: No dateMade or invalid dateMade provided');
+        if (!dateMade || !Moment(dateMade).isValid()) throw new Error('Remark failed to create: No dateMade or invalid dateMade provided');
         if (!landMarkId) throw new Error('Remark failed to create: No landMarkId provided');
 
         const remark = new Remark();
         remark.id = id;
         remark.text = text;
-        remark.dateMade = moment(dateMade).format(DateFormats.ThreeLetterAbbrevMonth_Day_TwoDigitYear);
+        remark.dateMade = Moment(dateMade).format(DateFormats.ThreeLetterAbbrevMonth_Day_TwoDigitYear);
         remark.landMarkId = landMarkId;
         return remark
     }
@@ -89,6 +99,7 @@ class ModelsFactory {
      * @returns <OthersRemark>
      */
     createOthersRemark({id, userName, remark, locationId}) {
+        const {Remark, OthersRemark} = this;
         if (!id) throw new Error('OthersRemark failed to create: No id provided');
         if (!userName) throw new Error('OthersRemark failed to create: No id provided');
         if (remark && !(remark instanceof Remark)) throw new Error('OthersRemark failed to create: No remark or invalid remark provided');
@@ -102,4 +113,4 @@ class ModelsFactory {
     }
 }
 
-export default ModelsFactory;
+export default ModelService;
