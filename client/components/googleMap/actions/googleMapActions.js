@@ -1,9 +1,4 @@
-import {
-    GOOGLE_MAP_LOADING,
-    GOOGLE_MAP_LOADING_FAILED,
-    GOOGLE_MAP_LOADING_SUCCESS,
-    MARK_USER_CURRENT_LOCATION
-} from '../constants/actionTypes'
+
 
 export const googleMapLoading = (googleMapLoadedCallbackFunc) => {
     return {

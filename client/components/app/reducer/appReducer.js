@@ -3,22 +3,13 @@ import {
     REQUEST_USER_MAP_FAILED,
     RECEIVED_USER_MAP
 } from '../constants/actionTypes';
-import {
-    GOOGLE_MAP_LOADING_SUCCESS,
-    GOOGLE_MAP_LOADING_FAILED,
-    GOOGLE_MAP_LOADING,
-    MARK_USER_CURRENT_LOCATION
-} from '../../googleMap/constants/actionTypes';
+
 import {
     UPDATE_LANDMARK_FOCUSED_ON,
     CREATE_LANDMARK,
     UPDATE_LANDMARK_REMARK
 }from '../../landMarkRemark/constants/actionTypes';
 
-import {
-    googleMapLoadingState,
-    googleMapMarking
-} from '../../googleMap/reducers/googleMapReducer';
 import {
     landMarkRemark
 }from '../../landMarkRemark/reducers/landMarkRemarkReducer'
