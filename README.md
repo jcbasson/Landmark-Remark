@@ -45,7 +45,7 @@ Visual Studio 2017 - Install from https://www.visualstudio.com/downloads/
 
 
 ### TODOS
-    1. Allow the user create a note at their current location
+    1. Implement Immutable.js for state management and mutations
     2. Build in defensive strategies for negative situations i.e. server is down
     3. Build Front-end tests
     4. Integrate my front-end code to a .NET SPA Web Application to alow streamlining of the dev process.
