@@ -34,7 +34,6 @@ class AppReducer {
                     return this.googleMapReducer.loadingAction(state, action);
                 case landmarkRemarkActionTypes.UPDATE_LANDMARK_FOCUSED_ON:
                 case landmarkRemarkActionTypes.CREATE_LANDMARK:
-                    debugger;
                     return this.landMarkRemarkReducer.landMarkAction(state, action);
                 case landmarkRemarkActionTypes.UPDATE_LANDMARK_REMARK:
                     return this.landMarkRemarkReducer.remarkAction(state, action);
