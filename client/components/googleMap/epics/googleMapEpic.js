@@ -5,8 +5,6 @@ import GoogleApiOptions from '../models/googleApiOptions';
 
 
 export const loadGoogleMapsScriptEpic = (action$, store, {landmarkRemarkService, Observable, actions}) => {
-
-    debugger;
     const {googleMapActions} = actions;
     const googleMapLoadingActionType = googleMapActions.googleMapLoading().type;
     return action$.ofType(googleMapLoadingActionType).mergeMap((action) =>

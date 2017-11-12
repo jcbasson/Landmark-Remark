@@ -20,8 +20,6 @@ class AppReducer {
          * @returns {Object}
          */
         return (state = {userMap: {}, isFetching: false, didInvalidate: false}, action) => {
-            console.log(action.type);
-            debugger;
             const appActionTypes = this.actionTypes;
             const landmarkRemarkActionTypes = this.landMarkRemarkReducer.actionTypes;
             const googleMapActionTypes = this.googleMapReducer.actionTypes;

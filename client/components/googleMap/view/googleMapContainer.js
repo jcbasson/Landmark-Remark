@@ -164,7 +164,6 @@ class GoogleMapContainer extends Component {
      * @param <GoogleMap> map
      */
     createNewLandMark({lat, lng}, map) {
-        debugger;
         //Create new remark
         const randomId = Math.random();
         //Set model service and event dispatch object

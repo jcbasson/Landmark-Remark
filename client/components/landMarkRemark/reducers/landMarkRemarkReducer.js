@@ -16,7 +16,6 @@ class LandMarkRemarkReducer {
      * @returns {Object}
      */
     landMarkAction(state = {userMap: {}}, action){
-        debugger;
         let {userMap} = state;
         let {user} = userMap;
         let {landMarks} = user;

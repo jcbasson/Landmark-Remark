@@ -3,13 +3,11 @@ import AppPresenter from './appPresenter'
 
 class AppContainer extends Component {
     constructor(props) {
-        debugger;
         super(props)
     }
 
     componentDidMount() {
         const {dispatch, actions} = this.props;
-        debugger;
         dispatch(actions.requestUserMap());
     }
 
