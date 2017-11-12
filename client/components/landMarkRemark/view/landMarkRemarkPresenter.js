@@ -1,9 +1,7 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import UserMapModel from '../../../models/userMapModel';
 import GoogleMapComponent from '../../googleMap/googleMapComponent';
 
-const LandMarkRemarkPresenter =({userMap, modelService} ) => (
+const LandMarkRemarkPresenter =({userMap, modelService, actions} ) => (
     <section id="landmark-remarks-component" className="col-xs-12 col-sm-8 col-md-9 col-lg-9 col-xl-9">
         <div className="row">
             <header className="col-xs-7">
@@ -14,13 +12,9 @@ const LandMarkRemarkPresenter =({userMap, modelService} ) => (
             </div>
         </div>
         <div className="row">
-            <GoogleMapComponent modelService={modelService}></GoogleMapComponent>
+            <GoogleMapComponent actions={actions} modelService={modelService}></GoogleMapComponent>
         </div>
     </section>
 );
-
-LandMarkRemarkPresenter.propTypes = {
-    userMap: PropTypes.instanceOf(UserMapModel).isRequired,
-};
 
 export default LandMarkRemarkPresenter;

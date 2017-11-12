@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Provider } from 'react-redux'
-import {modelService} from '../../configureDependencies';
+import {modelService} from '../../configureServices';
+import appActions from '../../configureActions';
 import configureStore from '../../configureStore';
 import AppComponent from '../app/AppComponent';
 
@@ -10,7 +11,7 @@ export default class RootComponent extends Component {
     render() {
         return (
             <Provider store={store}>
-                <AppComponent modelService={modelService} />
+                <AppComponent actions={appActions} modelService={modelService} />
             </Provider>
         )
     }

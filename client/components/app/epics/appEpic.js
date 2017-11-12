@@ -1,13 +1,7 @@
-import {
-    requestUserMap,
-    requestUserLandmarksFailed,
-    receivedUserLandmarks
-} from '../actions/appActions';
-
-export const fetchUserLandMarksEpic = (action$, store, {landmarkRemarkService, Observable}) =>
+export const fetchUserLandMarksEpic = (action$, store, {landmarkRemarkService, Observable, actions}) =>
 {
-    const requestUserActionType = requestUserMap().type;
+    const requestUserActionType = actions.requestUserMap().type;
     return action$.ofType(requestUserActionType).mergeMap(() =>
-        landmarkRemarkService.getUserMap().map(userMap => (receivedUserLandmarks(userMap))).catch(error => Observable.of(requestUserLandmarksFailed(error)))
+        landmarkRemarkService.getUserMap().map(userMap => (actions.receivedUserLandmarks(userMap))).catch(error => Observable.of(actions.requestUserLandmarksFailed(error)))
     )
 };

@@ -1,27 +1,49 @@
-import {
-    REQUEST_USER_MAP,
-    REQUEST_USER_MAP_FAILED,
-    RECEIVED_USER_MAP
-} from '../constants/actionTypes'
-
-export const requestUserMap = () => {
-    return {
-        type: REQUEST_USER_MAP
+/**
+ * @class AppActions
+ * @desc Class containing actions with data for changing state
+ * @property <AppActionTypes> ActionTypes
+ * @property <LandMarkRemarkActions> landMarkRemarkActions
+ * @property <GoogleMapActions> googleMapActions
+ */
+class AppActions{
+    constructor(ActionTypes, LandMarkRemarkActions, GoogleMapActions)
+    {
+        this.actionTypes = ActionTypes;
+        this.landMarkRemarkActions = LandMarkRemarkActions;
+        this.googleMapActions = GoogleMapActions;
     }
-};
-
-export const requestUserLandmarksFailed = (error) => {
-    return {
-        type: REQUEST_USER_MAP_FAILED,
-        payload: error,
-        error: true
+    /**
+     * @desc Reducer action for making a server UserMap request
+     * @returns {Object<type: String>}
+     */
+    requestUserMap(){
+        return {
+            type: this.actionTypes.REQUEST_USER_MAP
+        }
     }
-};
-
-export const receivedUserLandmarks = (userMap) => {
-    return {
-        type: RECEIVED_USER_MAP,
-        userMap,
-        receivedAt: Date.now()
+    /**
+     * @desc Reducer action for when a server UserMap request failed
+     * @param {Object}error
+     * @returns {Object<type: String, payload: Object, error: boolean>}
+     */
+    requestUserLandmarksFailed(error){
+        return {
+            type: this.actionTypes.REQUEST_USER_MAP_FAILED,
+            payload: error,
+            error: true
+        }
     }
-};
+    /**
+     * @desc Reducer action for when a server UserMap request failed
+     * @param {UserMap}userMap
+     * @returns {Object<type: String, userMap: UserMap, receivedAt: String>}
+     */
+    receivedUserLandmarks(userMap){
+        return {
+            type: this.actionTypes.RECEIVED_USER_MAP,
+            userMap,
+            receivedAt: Date.now()
+        }
+    }
+}
+export default AppActions;

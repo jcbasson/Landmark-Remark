@@ -1,17 +1,14 @@
-import {
-    googleMapLoading,
-    googleMapLoadingFailed,
-    googleMapLoadingSuccess
-} from '../actions/googleMapActions';
 import LoadScript from '../helpers/scriptLoader';
 import generateGoogleApiUrl from '../helpers/gooleApiUrlGenerator'
 import endpoints from '../constants/endpointSettings';
 import GoogleApiOptions from '../models/googleApiOptions';
 
 
-export const loadGoogleMapsScriptEpic = (action$, store, {getJSON, Observable}) => {
+export const loadGoogleMapsScriptEpic = (action$, store, {landmarkRemarkService, Observable, actions}) => {
 
-    const googleMapLoadingActionType = googleMapLoading().type;
+    debugger;
+    const {googleMapActions} = actions;
+    const googleMapLoadingActionType = googleMapActions.googleMapLoading().type;
     return action$.ofType(googleMapLoadingActionType).mergeMap((action) =>
     {
         const currentState = store.getState();
@@ -21,8 +18,7 @@ export const loadGoogleMapsScriptEpic = (action$, store, {getJSON, Observable}) 
             const mapApiKey = currentState.appReducer.userMap.mapApiKey;
             let googleApiOptions = createGoogleApiOptions(mapApiKey);
             let googleMapApiUrl = generateGoogleApiUrl(googleApiOptions);
-            return Observable.fromPromise(LoadScript(googleMapApiUrl, googleMapLoadedCallbackFunc))
-                .map(response => (googleMapLoadingSuccess())).catch(error => (googleMapLoadingFailed()))
+            return Observable.fromPromise(LoadScript(googleMapApiUrl, googleMapLoadedCallbackFunc)).map(response => (googleMapActions.googleMapLoadingSuccess())).catch(error => (googleMapActions.googleMapLoadingFailed()))
         }
     })
 };

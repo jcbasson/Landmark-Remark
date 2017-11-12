@@ -1,16 +1,16 @@
 import React, {Component} from 'react'
-import {requestUserMap} from '../actions/appActions'
 import AppPresenter from './appPresenter'
 
 class AppContainer extends Component {
     constructor(props) {
-
+        debugger;
         super(props)
     }
 
     componentDidMount() {
-        const {dispatch} = this.props;
-        dispatch(requestUserMap());
+        const {dispatch, actions} = this.props;
+        debugger;
+        dispatch(actions.requestUserMap());
     }
 
     componentDidUpdate(prevProps) {

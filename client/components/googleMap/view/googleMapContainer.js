@@ -1,6 +1,4 @@
 import React, {Component} from 'react'
-import {googleMapLoading} from '../actions/googleMapActions';
-import {updateLandMarkHasFocus, createLandmark, updateRemark} from '../../landMarkRemark/actions/landMarkRemarkActions';
 import GoogleMapPresenter from './googleMapPresenter';
 import {findUserCurrentGeolocation} from '../helpers/geolocationFinder';
 import mapSettings from '../constants/mapSettings';
@@ -21,8 +19,8 @@ class GoogleMapContainer extends Component {
     constructor(props) {
         super(props);
         this.currentOpenRemarkWindow = null;
-        const {dispatch} = props;
-        dispatch(googleMapLoading(this.loadGoogleMapLandMarks.bind(this)));
+        const {dispatch, actions} = props;
+        dispatch(actions.googleMapActions.googleMapLoading(this.loadGoogleMapLandMarks.bind(this)));
     }
 
     loadGoogleMapLandMarks() {
@@ -123,8 +121,7 @@ class GoogleMapContainer extends Component {
      * @param <LandMark> landMark
      */
     addLandMarkEvents(map, infowindow, remarkComponent, marker, landMark) {
-        //Set event dispatch object
-        const {dispatch} = this.props;
+        const {dispatch, actions} = this.props;
         const googleMapsApi = google.maps;
         //Add listener for closing of the InfoWindow
         infowindow.addListener('closeclick', () => {
@@ -132,7 +129,7 @@ class GoogleMapContainer extends Component {
             this.currentOpenRemarkWindow = null;
 
             //Update the remark focus status to false
-            dispatch(updateLandMarkHasFocus(landMark.id, false));
+            dispatch(actions.landMarkRemarkActions.updateLandMarkHasFocus(landMark.id, false));
         });
         marker.addListener('click', () => {
             //Close other previously open remark window
@@ -145,7 +142,7 @@ class GoogleMapContainer extends Component {
             this.openCurrentOpenRemarkWindow(map, marker);
 
             //Update the remark focus status to true
-            dispatch(updateLandMarkHasFocus(landMark.id, true));
+            dispatch(actions.landMarkRemarkActions.updateLandMarkHasFocus(landMark.id, true));
         });
 
         //Toggle the Remark component to Save Mode
@@ -156,7 +153,8 @@ class GoogleMapContainer extends Component {
         googleMapsApi.event.addDomListener(remarkComponent.btnSaveRemarkElement, "click", () => {
             remarkComponent.setRemarkText();
             remarkComponent.setDisplayMode();
-            dispatch(updateRemark(landMark.id, remarkComponent.getRemarkText()));
+            //Dispatch update landmark remark update action
+            dispatch(actions.landMarkRemarkActions.updateRemark(landMark.id, remarkComponent.getRemarkText()));
         });
     }
 
@@ -166,10 +164,11 @@ class GoogleMapContainer extends Component {
      * @param <GoogleMap> map
      */
     createNewLandMark({lat, lng}, map) {
+        debugger;
         //Create new remark
         const randomId = Math.random();
-        //Set model factory and event dispatch object
-        const {modelService, dispatch} = this.props;
+        //Set model service and event dispatch object
+        const {modelService, dispatch, actions} = this.props;
         //Close other previously open remark window
         this.closeCurrentOpenRemarkWindow();
         //Create new landmark
@@ -192,8 +191,8 @@ class GoogleMapContainer extends Component {
         map.panTo({lat, lng});
         //Load landmark and remark to google map
         this.loadMapMarker(map, landMark, true);
-
-        dispatch(createLandmark(landMark));
+        //Dispatch create landmark action
+        dispatch(actions.landMarkRemarkActions.createLandmark(landMark));
     }
 
     /**

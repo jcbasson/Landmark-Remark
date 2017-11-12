@@ -1,12 +1,11 @@
 import {createStore, applyMiddleware} from 'redux'
-import {createLogger} from 'redux-logger'
 import reduxCatch from 'redux-catch';
 import Raven from 'raven-js';
 import {SENTRY_KEY} from './constants/configSettings';
-import rootReducer from './components/root/rootReducer';
-import {epicMiddleware}  from './configureDependencies';
+import reducer from './configureReducers';
+import {epicMiddleware, loggerMiddleware}  from './configureMiddelware';
 
-const loggerMiddleware = createLogger();
+
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 Raven.config(`https://${SENTRY_KEY}@sentry.io/209498`).install();
 
@@ -24,7 +23,7 @@ const errorHandler = (error, getState, action) => {
 
 export default function configureStore(preloadedState) {
 
-    return createStore(rootReducer, preloadedState, composeEnhancers(
+    return createStore(reducer, preloadedState, composeEnhancers(
         applyMiddleware(
             epicMiddleware,
             loggerMiddleware,

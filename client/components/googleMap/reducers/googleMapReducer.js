@@ -1,22 +1,13 @@
 /**
  * @class GoogleMapReducer
- * @property <Immutable> Immutable
+ * @desc Class containing reducer actions for creating the new state
+ * @property <Immutable> immutable
+ * @property <GoogleMapActionTypes> ActionTypes
  */
 class GoogleMapReducer {
-    constructor(Immutable) {
-        this.Immutable = Immutable;
-    }
-
-    /**
-     * @desc static field ActionTypes
-     */
-    static get ActionTypes() {
-        return {
-            GOOGLE_MAP_LOADING_SUCCESS: 'GOOGLE_MAP_LOADING_SUCCESS',
-            GOOGLE_MAP_LOADING_FAILED: 'GOOGLE_MAP_LOADING_FAILED',
-            GOOGLE_MAP_LOADING: 'GOOGLE_MAP_LOADING',
-            MARK_USER_CURRENT_LOCATION: 'MARK_USER_CURRENT_LOCATION',
-        }
+    constructor(Immutable, ActionTypes) {
+        this.immutable = Immutable;
+        this.actionTypes = ActionTypes;
     }
 
     /**
@@ -26,12 +17,13 @@ class GoogleMapReducer {
      * @returns {Object}
      */
     loadingAction(state = {}, action) {
+        const actionTypes = this.actionTypes;
         switch (action.type) {
-            case GoogleMapReducer.ActionTypes.GOOGLE_MAP_LOADING_SUCCESS:
-            case GoogleMapReducer.ActionTypes.GOOGLE_MAP_LOADING_FAILED:
-            case GoogleMapReducer.ActionTypes.GOOGLE_MAP_LOADING:
+            case actionTypes.GOOGLE_MAP_LOADING_SUCCESS:
+            case actionTypes.GOOGLE_MAP_LOADING_FAILED:
+            case actionTypes.GOOGLE_MAP_LOADING:
                 let {userMap} = state;
-                userMap = createNextState(Object, userMap, {
+                userMap = this.createNextState(userMap, {
                     googleMapIsLoading: action.googleMapIsLoading,
                     googleMapLoaded: action.googleMapLoaded
                 });
@@ -44,32 +36,12 @@ class GoogleMapReducer {
     }
 
     /**
-     * @desc Creates a new state based on Google Map Marking Actions
-     * @param {Object} state
-     * @param {Object} action
-     * @returns {Object}
-     */
-    markingAction(state = {userMap: {}}, action) {
-        switch (action.type) {
-            case GoogleMapReducer.ActionTypes.MARK_USER_CURRENT_LOCATION:
-                let {userMap} = state;
-                userMap = this.createNextState(Object, userMap, {currentLocation: action.currentLocation});
-                return this.createNextState(Object, state, {
-                    userMap
-                });
-            default:
-                return state
-        }
-    };
-
-    /**
      * @desc Creates a copy of a specified TYPE object with the specified properties
-     * @param <Type> type
      * @param <Object> state
      * @param <Object> appProperties
      */
-    createNextState(type, state, appProperties){
-        return Object.assign(new type,
+    createNextState(state, appProperties){
+        return Object.assign({},
             state, appProperties);
     }
 }
