@@ -1,10 +1,10 @@
 import {Observable} from 'rxjs';
 import {createEpicMiddleware, combineEpics} from 'redux-observable';
 import {createLogger} from 'redux-logger'
-import {fetchUserLandMarksEpic} from './components/app/epics/appEpic';
-import {loadGoogleMapsScriptEpic} from './components/googleMap/epics/googleMapEpic';
+import {fetchUserLandMarksEpic} from '../components/app/epics/appEpic';
+import {loadGoogleMapsScriptEpic} from '../components/googleMap/epics/googleMapEpic';
 import {landmarkRemarkService} from './configureServices';
-import appActions from "./configureActions";
+import {appActions} from "./configureActions";
 
 //Combine all the application epics
 const appEpic = combineEpics(fetchUserLandMarksEpic, loadGoogleMapsScriptEpic);

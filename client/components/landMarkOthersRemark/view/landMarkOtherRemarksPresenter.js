@@ -1,7 +1,8 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import OthersRemark from '../../../models/othersRemarkModel';
-
+/**
+ * @Function LandMarkOtherRemarksPresenter
+ * @desc React Presenter function returning component jsx
+ */
 const LandMarkOtherRemarksPresenter = ({otherRemarks}) => (
 
     <aside id="landmark-others-remarks-component" className="col-xs-12 col-sm-4 col-md-3 col-lg-3 col-xl-3">
@@ -24,9 +25,4 @@ const LandMarkOtherRemarksPresenter = ({otherRemarks}) => (
         </section>
     </aside>
 );
-
-LandMarkOtherRemarksPresenter.propTypes = {
-    otherRemarks: PropTypes.arrayOf(OthersRemark).isRequired,
-};
-
 export default LandMarkOtherRemarksPresenter;

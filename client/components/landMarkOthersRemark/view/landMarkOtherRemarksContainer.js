@@ -1,5 +1,4 @@
 import React, {Component} from 'react'
-//import {} from '../actions/appActions'
 import LandMarkOtherRemarksPresenter from './LandMarkOtherRemarksPresenter';
 
 class LandMarkOtherRemarksContainer extends Component {
@@ -11,6 +10,8 @@ class LandMarkOtherRemarksContainer extends Component {
     }
 
     componentDidUpdate(prevProps) {
+
+        //TODO CHECK equality between prevProps and this.props
     }
 
     render() {

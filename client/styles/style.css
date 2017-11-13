@@ -61,4 +61,8 @@ div, section, aside {
     margin: 10px;
     width: 300px;
 }
+.error-boundary
+{
+    padding: 10px;
+}
 

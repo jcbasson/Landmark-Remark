@@ -1,7 +1,7 @@
 /**
  * @class AppActions
  * @desc Class containing actions with data for changing state
- * @property <AppActionTypes> ActionTypes
+ * @property <AppActionTypes> actionTypes
  * @property <LandMarkRemarkActions> landMarkRemarkActions
  * @property <GoogleMapActions> googleMapActions
  */

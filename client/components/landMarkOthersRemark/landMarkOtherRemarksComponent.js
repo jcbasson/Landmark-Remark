@@ -1,6 +1,5 @@
 import {connect} from 'react-redux';
 import LandMarkOthersRemarkContainer from './view/landMarkOtherRemarksContainer';
-import LandMark from "../../models/landMarkModel";
 
 const mapStateToProps = (state) => {
     return {otherRemarks: getHoveredLandMarksOthersRemarks(state)};

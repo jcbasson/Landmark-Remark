@@ -1,7 +1,7 @@
 import {createStore, applyMiddleware} from 'redux'
 import reduxCatch from 'redux-catch';
 import Raven from 'raven-js';
-import {SENTRY_KEY} from './constants/configSettings';
+import {SENTRY_KEY} from '../constants/configSettings';
 import reducer from './configureReducers';
 import {epicMiddleware, loggerMiddleware}  from './configureMiddelware';
 
