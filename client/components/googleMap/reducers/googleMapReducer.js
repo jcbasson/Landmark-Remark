@@ -27,7 +27,7 @@ class GoogleMapReducer {
                     googleMapIsLoading: action.googleMapIsLoading,
                     googleMapLoaded: action.googleMapLoaded
                 });
-                return this.createNextState(Object, state, {
+                return this.createNextState(state, {
                     userMap
                 });
             default:
