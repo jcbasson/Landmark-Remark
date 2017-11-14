@@ -46,6 +46,7 @@ Visual Studio 2017 - Install from https://www.visualstudio.com/downloads/
 
 ### TODOS
     1. Integrate my front-end code to a .NET SPA Web Application to alow streamlining of the dev process.
+       a.See if I can change the endpoint to WebQL
     2. Build in SignalR Middleware to allow real time updating of other users remarks
     3. Build Front-end tests
     4. Build MSSQL Database
