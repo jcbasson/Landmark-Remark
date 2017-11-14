@@ -9,7 +9,7 @@ Full stack application that allows the user the following user stories:
 
 Front-end stack:
 ```
-React, Redux, Redux-Observable, Rxjs, Google Maps, Html5, CSS, Node.js, Webpack2, Babel, Yarn
+React, Redux, Redux-Observable, Rxjs, Google Maps, Immutable.js, Webpack2, Babel, Yarn
 ```
 Back-end stack:
 ```
@@ -39,25 +39,23 @@ Visual Studio 2017 - Install from https://www.visualstudio.com/downloads/
     2.In git bash run git clone https://github.com/jcbasson/Landmark-Remark.git
     3.Using Gitbash in the root of project "cd Landmark-Remark" run "Yarn" 
     4.Navigate to server in the root folder and run server.sln
-    5.In Visual Studio run project to setup the api
+    5.In Visual Studio run project "Landmark_Remark.api" to setup the api (Don't use IISExpress)
     6.Go back to Gitbash and in the root folder run Yarn start
     7.For now use only Google Chrome or IE Edge and run http://localhost:8080/
 
 
 ### TODOS
-    1. Implement Immutable.js for state management and mutations
-    2. Build in defensive strategies for negative situations i.e. server is down
+    1. Integrate my front-end code to a .NET SPA Web Application to alow streamlining of the dev process.
+    2. Build in SignalR Middleware to allow real time updating of other users remarks
     3. Build Front-end tests
-    4. Integrate my front-end code to a .NET SPA Web Application to alow streamlining of the dev process.
-    5. Build in SignalR Middleware to allow real time updating of other users remarks
-    6. Build MSSQL Database
-    7. Build Repository Layer
-    8. Build Service Layer and hook it up to Repository Layer
-    9. Hook Api to Service layer
-    10. Implement API Security protocols
-    10. Build unit tests for Repository, Service and API layers respectively
-    11. Build integration test for API points
-    12. Test whole application
+    4. Build MSSQL Database
+    5. Build Repository Layer
+    6. Build Service Layer and hook it up to Repository Layer
+    7. Hook Api to Service layer
+    8. Implement API Security protocols
+    9. Build unit tests for Repository, Service and API layers respectively
+    10. Build integration test for API points
+    11. Test whole application
 
 ## Authors
 
