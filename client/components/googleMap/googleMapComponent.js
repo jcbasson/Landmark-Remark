@@ -1,10 +1,9 @@
+
 import {connect} from 'react-redux';
 import GoogleMapContainer from './view/googleMapContainer';
 
-const mapStateToProps = (state) => {
-    const {userMap} = state.appReducer;
-    const {user} = userMap;
-    const {landMarks} = user;
+const mapStateToProps = ({appReducer}) => {
+    const landMarks = appReducer.getIn(['userMap', 'user', 'landMarks']).toJS();
     return {landMarks};
 };
 

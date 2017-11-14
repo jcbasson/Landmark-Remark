@@ -15,11 +15,11 @@ class AppReducer {
 
         /**
          * @desc Creates the central app reducer function to be added to the redux store
-         * @param {Object} state
+         * @param {Immutable.Map} state
          * @param {Object} action
          * @returns {Object}
          */
-        return (state = {userMap: {}, isFetching: false, didInvalidate: false}, action) => {
+        return (state = this.immutable.fromJS({ isFetching: false, userMap: null, lastUpdated: null}), action) => {
             const appActionTypes = this.actionTypes;
             const landmarkRemarkActionTypes = this.landMarkRemarkReducer.actionTypes;
             const googleMapActionTypes = this.googleMapReducer.actionTypes;
@@ -45,41 +45,26 @@ class AppReducer {
 
     /**
      * @desc Creates a new state based on UserMap server requests
-     * @param {Object} state
+     * @param {Immutable.Map} state
      * @param {Object} action
      * @returns {Object}
      */
-    userMapAction(state = {isFetching: false, didInvalidate: false, userMap: {}}, action) {
+    userMapAction(state, action) {
         const actionTypes = this.actionTypes;
         switch (action.type) {
             case actionTypes.REQUEST_USER_MAP:
-                return this.createNextState(state, {
-                    isFetching: true,
-                    didInvalidate: false
-                });
+                return state.set('isFetching', true);
             case actionTypes.RECEIVED_USER_MAP:
-                return this.createNextState(state, {
+                return state.merge({
                     isFetching: false,
-                    didInvalidate: false,
-                    userMap: action.userMap,
+                    userMap: this.immutable.fromJS(action.userMap),
                     lastUpdated: action.receivedAt
                 });
             case actionTypes.REQUEST_USER_MAP_FAILED:
-                return this.createNextState(state, {latestError: action.payload});
+                return state.merge({latestError: action.payload});
             default:
                 return state
         }
-    }
-
-    /**
-     * @desc Creates a copy of an object with the specified properties
-     * @param {Object} state
-     * @param {Object} appProperties
-     * @returns {Object}
-     */
-    createNextState(state, appProperties) {
-        return Object.assign({},
-            state, appProperties);
     }
 }
 

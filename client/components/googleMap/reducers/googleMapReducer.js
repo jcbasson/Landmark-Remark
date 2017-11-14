@@ -12,37 +12,25 @@ class GoogleMapReducer {
 
     /**
      * @desc Creates a new state based on Google Map Loading Actions
-     * @param {Object} state
+     * @param {Immutable.Map} state
      * @param {Object} action
      * @returns {Object}
      */
-    loadingAction(state = {}, action) {
+    loadingAction(state, action) {
         const actionTypes = this.actionTypes;
         switch (action.type) {
             case actionTypes.GOOGLE_MAP_LOADING_SUCCESS:
             case actionTypes.GOOGLE_MAP_LOADING_FAILED:
             case actionTypes.GOOGLE_MAP_LOADING:
-                let {userMap} = state;
-                userMap = this.createNextState(userMap, {
-                    googleMapIsLoading: action.googleMapIsLoading,
-                    googleMapLoaded: action.googleMapLoaded
-                });
-                return this.createNextState(state, {
-                    userMap
+                return state.mergeDeep({
+                    userMap: {
+                        googleMapIsLoading: action.googleMapIsLoading,
+                        googleMapLoaded: action.googleMapLoaded
+                    }
                 });
             default:
                 return state
         }
-    }
-
-    /**
-     * @desc Creates a copy of a specified TYPE object with the specified properties
-     * @param <Object> state
-     * @param <Object> appProperties
-     */
-    createNextState(state, appProperties){
-        return Object.assign({},
-            state, appProperties);
     }
 }
 

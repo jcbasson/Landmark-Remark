@@ -1,9 +1,9 @@
 import {connect} from 'react-redux';
 import HeaderContainer from './view/headerContainer';
 
-const mapStateToProps = (state) => {
-    const {user} = state.appReducer.userMap;
-    return {user};
+const mapStateToProps = ({appReducer}) => {
+    const userName = appReducer.getIn(['userMap', 'user', 'userName']);
+    return {userName};
 };
 
 const HeaderComponent = connect(

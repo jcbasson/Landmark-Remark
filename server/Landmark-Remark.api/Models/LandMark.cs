@@ -12,6 +12,7 @@ namespace Landmark_Remark.api.Models
         public Double Longitude { get; set; }
         public Double Latitude { get; set; }
         public Remark Remark { get; set; }
+        public bool hasFocus { get; set; }
         public IEnumerable<OtherRemark> othersRemarks { get; set; }
     }
 }

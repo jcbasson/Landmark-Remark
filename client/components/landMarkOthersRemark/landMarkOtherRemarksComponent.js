@@ -1,23 +1,19 @@
 import {connect} from 'react-redux';
 import LandMarkOthersRemarkContainer from './view/landMarkOtherRemarksContainer';
 
-const mapStateToProps = (state) => {
-    return {otherRemarks: getHoveredLandMarksOthersRemarks(state)};
+const mapStateToProps = ({appReducer}) => {
+    const othersRemarks = getOtherRemarksForFocusedLandMark(appReducer);
+    return {otherRemarks: othersRemarks ? othersRemarks : []};
 };
 
-const getHoveredLandMarksOthersRemarks = (state) => {
-    const {userMap} = state.appReducer;
-    const {landMarks} = userMap.user;
-    if (landMarks && Array.isArray(landMarks) && landMarks.length > 0) {
-        const landMarksLength = landMarks.length;
-        for (let i = 0; i < landMarksLength; i++) {
-            let landMark = landMarks[i];
-            if (landMark.hasFocus) {
-                return landMark.othersRemarks;
-            }
+const getOtherRemarksForFocusedLandMark = (appReducer) => {
+    const focusedLandMark = appReducer.getIn(['userMap', 'user', 'landMarks']).filter(landMark => {
+        const landMarkHasFocus = landMark.get('hasFocus');
+        if (landMarkHasFocus) {
+            return landMark;
         }
-    }
-    return [];
+    }).reduce();
+    return focusedLandMark? focusedLandMark.get('othersRemarks').toJS(): [];
 };
 
 const LandMarkOtherRemarksComponent = connect(
