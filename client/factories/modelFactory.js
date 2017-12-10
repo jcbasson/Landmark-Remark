@@ -1,5 +1,5 @@
 /**
- * @class ModelService
+ * @class ModelFactory
  * @property <Moment constructor> Moment
  * @property <UserMap constructor> UserMap
  * @property <User constructor> User
@@ -8,7 +8,7 @@
  * @property <OthersRemark constructor> OthersRemark
  * @property <DateFormats constructor> DateFormats
  */
-class ModelService {
+class ModelFactory {
     constructor(Moment, UserMap, User, LandMark, Remark, OthersRemark, DateFormats) {
         this.Moment = Moment;
         this.UserMap = UserMap;
@@ -113,4 +113,4 @@ class ModelService {
     }
 }
 
-export default ModelService;
+export default ModelFactory;
