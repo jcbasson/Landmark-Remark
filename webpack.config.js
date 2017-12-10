@@ -27,6 +27,7 @@ const NamedModulesPluginConfig = new Webpack.NamedModulesPlugin();
 const path = require('path');
 
 module.exports = {
+    devtool: 'source-map',
     entry: [
         'react-hot-loader/patch',
         "webpack/hot/only-dev-server", // "only" stops HMR on syntax errors
@@ -51,14 +52,6 @@ module.exports = {
         }, {
             test: /\.js$/,
             use: 'babel-loader',
-            exclude: /node_modules/
-        }, {
-            test: /\.jsx?$/,
-            use: 'babel-loader',
-            exclude: /node_modules/
-        }, {
-            test: /\.js$/,
-            use: 'react-hot-loader/webpack',
             exclude: /node_modules/
         }],
     },

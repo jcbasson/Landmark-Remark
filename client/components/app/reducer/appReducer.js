@@ -33,6 +33,7 @@ class AppReducer {
                 case googleMapActionTypes.GOOGLE_MAP_LOADING:
                     return this.googleMapReducer.loadingAction(state, action);
                 case landmarkRemarkActionTypes.UPDATE_LANDMARK_FOCUSED_ON:
+                case landmarkRemarkActionTypes.REFRESH_ALL_LANDMARK_HAS_FOCUS:
                 case landmarkRemarkActionTypes.CREATE_LANDMARK:
                     return this.landMarkRemarkReducer.landMarkAction(state, action);
                 case landmarkRemarkActionTypes.UPDATE_LANDMARK_REMARK:

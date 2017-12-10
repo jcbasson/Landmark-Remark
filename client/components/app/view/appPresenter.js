@@ -8,7 +8,7 @@ import ErrorBoundaryComponent from '../../errorBoundary/errorBoundaryComponent'
  * @Function AppPresenter
  * @desc React Presenter function returning component jsx
  */
-const AppPresenter = ({userMap, isFetching, modelService, actions, errorActions}) => (
+const AppPresenter = ({userMap, isFetching, modelFactory, actions, errorActions}) => (
     <main id="app-component" className="container-fluid">
         {isFetching && !userMap && <h2>Loading...</h2>}
         {!isFetching && userMap && <HeaderComponent></HeaderComponent>}
@@ -16,7 +16,7 @@ const AppPresenter = ({userMap, isFetching, modelService, actions, errorActions}
             {!isFetching
             && userMap
             && <ErrorBoundaryComponent actions={errorActions} sourceComponent="LandMarkRemark">
-                <LandMarkRemarkComponent actions={{landMarkRemarkActions: actions.landMarkRemarkActions, googleMapActions: actions.googleMapActions}} modelService={modelService}>
+                <LandMarkRemarkComponent actions={{landMarkRemarkActions: actions.landMarkRemarkActions, googleMapActions: actions.googleMapActions}} modelFactory={modelFactory}>
                 </LandMarkRemarkComponent>
             </ErrorBoundaryComponent>}
             {!isFetching

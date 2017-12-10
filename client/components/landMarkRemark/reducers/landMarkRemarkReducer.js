@@ -20,8 +20,8 @@ class LandMarkRemarkReducer {
         switch (action.type) {
             case this.actionTypes.UPDATE_LANDMARK_FOCUSED_ON:
                 //Set the land mark that has focus
-                const newState = state.updateIn(['userMap', 'user', 'landMarks'], landMarks => {
-                  const updateLandMarks =  landMarks.map(landMark => {
+                return state.updateIn(['userMap', 'user', 'landMarks'], landMarks => {
+                    const updateLandMarks = landMarks.map(landMark => {
                         let landMarkFocusStatus = false;
                         const landMarkId = landMark.get('id');
                         if (landMarkId === action.landMarkId) {
@@ -32,8 +32,15 @@ class LandMarkRemarkReducer {
                     });
                     return updateLandMarks;
                 });
-                return newState;
-
+            case this.actionTypes.REFRESH_ALL_LANDMARK_HAS_FOCUS:
+                //Set the all land mark  hasFocus to false
+                return state.updateIn(['userMap', 'user', 'landMarks'], landMarks => {
+                    const updateLandMarks = landMarks.map(landMark => {
+                        const updatedLandmark = landMark.set('hasFocus', false);
+                        return updatedLandmark;
+                    });
+                    return updateLandMarks;
+                });
             case this.actionTypes.CREATE_LANDMARK:
                 const imLandMark = this.immutable.fromJS(Object.assign({}, action.landMark));
                 //Create the new state with the new landmark
@@ -53,21 +60,20 @@ class LandMarkRemarkReducer {
         switch (action.type) {
             case this.actionTypes.UPDATE_LANDMARK_REMARK:
                 //Create the new state with the specified landmark updated remark text
-                const newState = state.updateIn(['userMap', 'user', 'landMarks'], landMarks => {
-                    landMarks.map(landMark => {
+                return state.updateIn(['userMap', 'user', 'landMarks'], landMarks => {
+                    return landMarks.map(landMark => {
                         const landMarkId = landMark.get('id');
                         if (landMarkId === action.landMarkId) {
-                            landMark.update('remark', remark => {
+                            return landMark.update('remark', remark => {
                                 remark.text = action.remarkText;
                                 return remark;
                             });
                         }
                         return landMark
-                    })
-                    return landMarks;
+                    });
                 });
-
-                return newState;
+            default:
+                return state
         }
     }
 }

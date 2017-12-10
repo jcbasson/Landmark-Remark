@@ -13,6 +13,7 @@ const getOtherRemarksForFocusedLandMark = (appReducer) => {
             return landMark;
         }
     }).reduce();
+
     return focusedLandMark? focusedLandMark.get('othersRemarks').toJS(): [];
 };
 

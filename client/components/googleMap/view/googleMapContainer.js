@@ -44,7 +44,7 @@ class GoogleMapContainer extends Component {
             //Google maps even object with functions for extracting latitude and longitude
             const eventLatLng = e.latLng;
             //Create new landmark with the selected coordinates
-            this.createNewLandMark({lat: eventLatLng.lat(), lng: eventLatLng.lng()}, map);
+            this.createMapLandMark({lat: eventLatLng.lat(), lng: eventLatLng.lng()}, map);
         });
     }
 
@@ -70,7 +70,7 @@ class GoogleMapContainer extends Component {
      */
     markUserCurrentLocation(map, position) {
         const coordinates = position.coords;
-        this.createNewLandMark({lat: coordinates.latitude, lng: coordinates.longitude}, map);
+        this.createMapLandMark({lat: coordinates.latitude, lng: coordinates.longitude}, map);
     }
 
     /**
@@ -163,34 +163,23 @@ class GoogleMapContainer extends Component {
      * @param <Object{lat: Decimal, lng: Decimal }> latitudeLongitudeSettings
      * @param <GoogleMap> map
      */
-    createNewLandMark({lat, lng}, map) {
-        //Create new remark
-        const randomId = Math.random();
+    createMapLandMark({lat, lng}, map) {
         //Set model service and event dispatch object
-        const {modelService, dispatch, actions} = this.props;
+        const {modelFactory, dispatch, actions} = this.props;
         //Close other previously open remark window
         this.closeCurrentOpenRemarkWindow();
         //Create new landmark
-        const landMark = modelService.createLandMark({
-            id: `LandMark_${lat}_${lng}`,
+        const landMark = modelFactory.createLandMark({
             longitude: lng,
             latitude: lat,
-            hasFocus: true
+            hasFocus: true,
         });
-        //Create remark
-        const remark = modelService.createRemark({
-            id: `Remark_${landMark.id}_${randomId}`,
-            text: '',
-            dateMade: Date.now(),
-            landMarkId: landMark.id
-        });
-        //Set landmark remark
-        landMark.remark = remark;
         //Focus map over landmark location
         map.panTo({lat, lng});
         //Load landmark and remark to google map
         this.loadMapMarker(map, landMark, true);
         //Dispatch create landmark action
+        dispatch(actions.landMarkRemarkActions.refreshAllLandMarkHasFocus());
         dispatch(actions.landMarkRemarkActions.createLandmark(landMark));
     }
 

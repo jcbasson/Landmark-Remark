@@ -23,6 +23,16 @@ class LandMarkRemarkActions{
     }
 
     /**
+     * @desc Reducer action for updating a landmark focus
+     * @returns {{type: String}}
+     */
+    refreshAllLandMarkHasFocus(){
+        return {
+            type: this.actionTypes.REFRESH_ALL_LANDMARK_HAS_FOCUS
+        }
+    }
+
+    /**
      * @desc Reducer action for creating a landmark
      * @param {LandMark} landMark
      * @returns {{type: String, landMark: LandMark}}

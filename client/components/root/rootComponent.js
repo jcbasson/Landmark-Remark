@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Provider } from 'react-redux'
-import {modelService} from '../../configurations/configureServices';
+import {modelFactory} from '../../configurations/configureFactories';
 import {appActions, errorBoundaryActions} from '../../configurations/configureActions';
 import configureStore from '../../configurations/configureStore';
 import AppComponent from '../app/AppComponent';
@@ -13,7 +13,7 @@ export default class RootComponent extends Component {
         return (
             <Provider store={store}>
                 <ErrorBoundaryComponent actions={errorBoundaryActions} sourceComponent="App">
-                <AppComponent actions={appActions} errorActions={errorBoundaryActions} modelService={modelService} />
+                <AppComponent actions={appActions} errorActions={errorBoundaryActions} modelFactory={modelFactory} />
                 </ErrorBoundaryComponent>
             </Provider>
         )

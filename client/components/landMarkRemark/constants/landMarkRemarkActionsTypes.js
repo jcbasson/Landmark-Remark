@@ -15,5 +15,9 @@ class LandMarkRemarkActionsTypes{
     {
         return 'UPDATE_LANDMARK_REMARK';
     }
+    static get REFRESH_ALL_LANDMARK_HAS_FOCUS()
+    {
+        return 'REFRESH_ALL_LANDMARK_HAS_FOCUS';
+    }
 }
 export default LandMarkRemarkActionsTypes;

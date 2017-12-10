@@ -6,23 +6,28 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/.vs/server/v15/sqlite3/storage.ide" afterPath="$PROJECT_DIR$/server/.vs/server/v15/sqlite3/storage.ide" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/Landmark-Remark.api/bin/Debug/netcoreapp2.0/Landmark-Remark.api.dll" afterPath="$PROJECT_DIR$/server/Landmark-Remark.api/bin/Debug/netcoreapp2.0/Landmark-Remark.api.dll" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/Landmark-Remark.api/bin/Debug/netcoreapp2.0/Landmark-Remark.api.pdb" afterPath="$PROJECT_DIR$/server/Landmark-Remark.api/bin/Debug/netcoreapp2.0/Landmark-Remark.api.pdb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/Landmark-Remark.api/obj/Debug/netcoreapp2.0/Landmark-Remark.api.csprojResolveAssemblyReference.cache" afterPath="$PROJECT_DIR$/server/Landmark-Remark.api/obj/Debug/netcoreapp2.0/Landmark-Remark.api.csprojResolveAssemblyReference.cache" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/Landmark-Remark.api/obj/Debug/netcoreapp2.0/Landmark-Remark.api.dll" afterPath="$PROJECT_DIR$/server/Landmark-Remark.api/obj/Debug/netcoreapp2.0/Landmark-Remark.api.dll" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/Landmark-Remark.api/obj/Debug/netcoreapp2.0/Landmark-Remark.api.pdb" afterPath="$PROJECT_DIR$/server/Landmark-Remark.api/obj/Debug/netcoreapp2.0/Landmark-Remark.api.pdb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/components/app/appComponent.js" afterPath="$PROJECT_DIR$/client/components/app/appComponent.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/components/app/reducer/appReducer.js" afterPath="$PROJECT_DIR$/client/components/app/reducer/appReducer.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/components/app/view/appPresenter.js" afterPath="$PROJECT_DIR$/client/components/app/view/appPresenter.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/components/googleMap/epics/googleMapEpic.js" afterPath="$PROJECT_DIR$/client/components/googleMap/epics/googleMapEpic.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/components/googleMap/googleMapComponent.js" afterPath="$PROJECT_DIR$/client/components/googleMap/googleMapComponent.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/components/googleMap/reducers/googleMapReducer.js" afterPath="$PROJECT_DIR$/client/components/googleMap/reducers/googleMapReducer.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/components/header/headerComponent.js" afterPath="$PROJECT_DIR$/client/components/header/headerComponent.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/components/header/view/headerContainer.js" afterPath="$PROJECT_DIR$/client/components/header/view/headerContainer.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/components/header/view/headerPresenter.js" afterPath="$PROJECT_DIR$/client/components/header/view/headerPresenter.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/components/googleMap/view/googleMapContainer.js" afterPath="$PROJECT_DIR$/client/components/googleMap/view/googleMapContainer.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/components/landMarkOthersRemark/landMarkOtherRemarksComponent.js" afterPath="$PROJECT_DIR$/client/components/landMarkOthersRemark/landMarkOtherRemarksComponent.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/components/landMarkRemark/landMarkRemarkComponent.js" afterPath="$PROJECT_DIR$/client/components/landMarkRemark/landMarkRemarkComponent.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/components/landMarkRemark/actions/landMarkRemarkActions.js" afterPath="$PROJECT_DIR$/client/components/landMarkRemark/actions/landMarkRemarkActions.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/components/landMarkRemark/constants/landMarkRemarkActionsTypes.js" afterPath="$PROJECT_DIR$/client/components/landMarkRemark/constants/landMarkRemarkActionsTypes.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/components/landMarkRemark/reducers/landMarkRemarkReducer.js" afterPath="$PROJECT_DIR$/client/components/landMarkRemark/reducers/landMarkRemarkReducer.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/components/landMarkRemark/view/landMarkRemarkPresenter.js" afterPath="$PROJECT_DIR$/client/components/landMarkRemark/view/landMarkRemarkPresenter.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/Landmark-Remark.api/Models/LandMark.cs" afterPath="$PROJECT_DIR$/server/Landmark-Remark.api/Models/LandMark.cs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/components/root/rootComponent.js" afterPath="$PROJECT_DIR$/client/components/root/rootComponent.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/configurations/configureFactories.js" afterPath="$PROJECT_DIR$/client/configurations/configureFactories.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/configurations/configureServices.js" afterPath="$PROJECT_DIR$/client/configurations/configureServices.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/factories/modelFactory.js" afterPath="$PROJECT_DIR$/client/factories/modelFactory.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/Landmark-Remark.api/obj/Debug/netcoreapp2.0/Landmark-Remark.api.AssemblyInfo.cs" afterPath="$PROJECT_DIR$/server/Landmark-Remark.api/obj/Debug/netcoreapp2.0/Landmark-Remark.api.AssemblyInfo.cs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/Landmark-Remark.api/obj/Debug/netcoreapp2.0/Landmark-Remark.api.AssemblyInfoInputs.cache" afterPath="$PROJECT_DIR$/server/Landmark-Remark.api/obj/Debug/netcoreapp2.0/Landmark-Remark.api.AssemblyInfoInputs.cache" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/Landmark-Remark.api/obj/Landmark-Remark.api.csproj.nuget.cache" afterPath="$PROJECT_DIR$/server/Landmark-Remark.api/obj/Landmark-Remark.api.csproj.nuget.cache" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/Landmark-Remark.api/obj/Landmark-Remark.api.csproj.nuget.g.props" afterPath="$PROJECT_DIR$/server/Landmark-Remark.api/obj/Landmark-Remark.api.csproj.nuget.g.props" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/Landmark-Remark.api/obj/project.assets.json" afterPath="$PROJECT_DIR$/server/Landmark-Remark.api/obj/project.assets.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webpack.config.js" afterPath="$PROJECT_DIR$/webpack.config.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -37,77 +42,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="landMarkRemarkComponent.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/components/landMarkRemark/landMarkRemarkComponent.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#36#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="googleMapComponent.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/components/googleMap/googleMapComponent.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="34" lean-forward="false" selection-start-line="14" selection-start-column="34" selection-end-line="14" selection-end-column="34" />
-              <folding>
-                <element signature="e#1#37#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="googleMapReducer.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/components/googleMap/reducers/googleMapReducer.js">
+      <file leaf-file-name="configureFactories.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/configurations/configureFactories.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="34">
-              <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="68" />
+              <caret line="2" column="13" lean-forward="true" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="landMarkRemarkReducer.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="modelFactory.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/factories/modelFactory.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="799">
+              <caret line="47" column="37" lean-forward="false" selection-start-line="47" selection-start-column="29" selection-end-line="47" selection-end-column="37" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="landMarkRemarkReducer.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/client/components/landMarkRemark/reducers/landMarkRemarkReducer.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="37" column="32" lean-forward="false" selection-start-line="37" selection-start-column="22" selection-end-line="37" selection-end-column="32" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="appReducer.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/components/app/reducer/appReducer.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="185">
-              <caret line="21" column="46" lean-forward="false" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="46" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="landMarkOtherRemarksComponent.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/client/components/landMarkOthersRemark/landMarkOtherRemarksComponent.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="22" column="33" lean-forward="false" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
-              <folding>
-                <element signature="e#0#36#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="landMarkRemarkContainer.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/components/landMarkRemark/view/landMarkRemarkContainer.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="4" column="14" lean-forward="false" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
+            <state relative-caret-position="646">
+              <caret line="80" column="37" lean-forward="true" selection-start-line="80" selection-start-column="37" selection-end-line="80" selection-end-column="37" />
               <folding />
             </state>
           </provider>
@@ -116,10 +75,44 @@
       <file leaf-file-name="landMarkRemarkPresenter.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/components/landMarkRemark/view/landMarkRemarkPresenter.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="33" lean-forward="false" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
+            <state relative-caret-position="306">
+              <caret line="18" column="76" lean-forward="false" selection-start-line="18" selection-start-column="76" selection-end-line="18" selection-end-column="76" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="googleMapPresenter.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/components/googleMap/view/googleMapPresenter.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="googleMapContainer.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/components/googleMap/view/googleMapContainer.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="329">
+              <caret line="171" column="46" lean-forward="true" selection-start-line="171" selection-start-column="46" selection-end-line="171" selection-end-column="46" />
+              <folding>
+                <element signature="e#0#38#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="landMarkOtherRemarksComponent.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/components/landMarkOthersRemark/landMarkOtherRemarksComponent.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" column="58" lean-forward="false" selection-start-line="10" selection-start-column="58" selection-end-line="10" selection-end-column="58" />
+              <folding>
+                <element signature="e#0#36#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -147,6 +140,18 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="googleMapComponent.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/components/googleMap/googleMapComponent.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="14" column="34" lean-forward="false" selection-start-line="14" selection-start-column="34" selection-end-line="14" selection-end-column="34" />
+              <folding>
+                <element signature="e#1#37#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -160,9 +165,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>REQUEST_USER_LANDMARKS_FAILED</find>
-      <find>createUser</find>
-      <find>requestUserLandmarks</find>
       <find>UserModel</find>
       <find>LandMarkModel</find>
       <find>RemarksModel</find>
@@ -190,6 +192,9 @@
       <find>debugger</find>
       <find>markUserCurrentLocation</find>
       <find>throw new</find>
+      <find>ModelService</find>
+      <find>modelService</find>
+      <find>create</find>
     </findStrings>
     <replaceStrings>
       <replace>REQUEST_USER_MAP_FAILED</replace>
@@ -199,6 +204,8 @@
       <replace>ModelsService</replace>
       <replace>ResponseTransformerService</replace>
       <replace>()</replace>
+      <replace>ModelFactory</replace>
+      <replace>modelFactory</replace>
     </replaceStrings>
     <dirStrings>
       <dir>C:\Users\janba\Projects\Landmark-Remark\client</dir>
@@ -210,12 +217,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/client/services/modelService.js" />
-        <option value="$PROJECT_DIR$/client/components/root/rootEpic.js" />
-        <option value="$PROJECT_DIR$/client/services/landmarkRemarkService.js" />
-        <option value="$PROJECT_DIR$/client/components/googleMap/constants/googleMapActionTypes.js" />
-        <option value="$PROJECT_DIR$/client/components/app/constants/actionTypes.js" />
-        <option value="$PROJECT_DIR$/client/components/landMarkRemark/constants/actionTypes.js" />
         <option value="$PROJECT_DIR$/client/configureDependencies.js" />
         <option value="$PROJECT_DIR$/client/utils/configureReducers.js" />
         <option value="$PROJECT_DIR$/client/configureServices.js" />
@@ -226,8 +227,6 @@
         <option value="$PROJECT_DIR$/client/configureStore.js" />
         <option value="$PROJECT_DIR$/client/components/root/rootReducer.js" />
         <option value="$PROJECT_DIR$/client/configureReducers.js" />
-        <option value="$PROJECT_DIR$/client/components/landMarkRemark/constants/landMarkRemarkActionsTypes.js" />
-        <option value="$PROJECT_DIR$/client/components/landMarkRemark/actions/landMarkRemarkActions.js" />
         <option value="$PROJECT_DIR$/client/components/googleMap/helpers/scriptLoader.js" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/client/components/errorBoundary/errorBoundaryComponent.js" />
@@ -241,14 +240,11 @@
         <option value="$PROJECT_DIR$/client/components/landMarkOthersRemark/view/landMarkOtherRemarksPresenter.js" />
         <option value="$PROJECT_DIR$/client/components/errorBoundary/view/errorBoundaryPresenter.js" />
         <option value="$PROJECT_DIR$/client/components/errorBoundary/reducer/errorBoundaryReducer.js" />
-        <option value="$PROJECT_DIR$/client/components/root/rootComponent.js" />
         <option value="$PROJECT_DIR$/client/components/app/view/appContainer.js" />
         <option value="$PROJECT_DIR$/client/styles/style.css" />
         <option value="$PROJECT_DIR$/client/components/errorBoundary/view/errorBoundaryContainer.js" />
         <option value="$PROJECT_DIR$/client/components/landMarkOthersRemark/view/landMarkOtherRemarksContainer.js" />
         <option value="$PROJECT_DIR$/client/components/landMarkRemark/view/landMarkRemarkContainer.js" />
-        <option value="$PROJECT_DIR$/client/components/googleMap/view/googleMapContainer.js" />
-        <option value="$PROJECT_DIR$/client/components/app/reducer/appReducer.js" />
         <option value="$PROJECT_DIR$/client/components/app/appComponent.js" />
         <option value="$PROJECT_DIR$/client/components/googleMap/reducers/googleMapReducer.js" />
         <option value="$PROJECT_DIR$/client/components/googleMap/googleMapComponent.js" />
@@ -256,11 +252,22 @@
         <option value="$PROJECT_DIR$/client/components/header/headerComponent.js" />
         <option value="$PROJECT_DIR$/client/components/header/view/headerPresenter.js" />
         <option value="$PROJECT_DIR$/client/components/header/view/headerContainer.js" />
-        <option value="$PROJECT_DIR$/client/components/landMarkRemark/view/landMarkRemarkPresenter.js" />
         <option value="$PROJECT_DIR$/client/components/googleMap/epics/googleMapEpic.js" />
+        <option value="$PROJECT_DIR$/.babelrc" />
+        <option value="$PROJECT_DIR$/client/components/landMarkRemark/constants/landMarkRemarkActionsTypes.js" />
+        <option value="$PROJECT_DIR$/client/components/landMarkRemark/actions/landMarkRemarkActions.js" />
+        <option value="$PROJECT_DIR$/client/components/app/reducer/appReducer.js" />
+        <option value="$PROJECT_DIR$/webpack.config.js" />
+        <option value="$PROJECT_DIR$/client/factories/modelService.js" />
+        <option value="$PROJECT_DIR$/client/configurations/configureServices.js" />
+        <option value="$PROJECT_DIR$/client/components/root/rootComponent.js" />
         <option value="$PROJECT_DIR$/client/components/app/view/appPresenter.js" />
-        <option value="$PROJECT_DIR$/client/components/landMarkRemark/reducers/landMarkRemarkReducer.js" />
+        <option value="$PROJECT_DIR$/client/components/landMarkRemark/view/landMarkRemarkPresenter.js" />
+        <option value="$PROJECT_DIR$/client/configurations/configureFactories.js" />
+        <option value="$PROJECT_DIR$/client/components/googleMap/view/googleMapContainer.js" />
         <option value="$PROJECT_DIR$/client/components/landMarkOthersRemark/landMarkOtherRemarksComponent.js" />
+        <option value="$PROJECT_DIR$/client/components/landMarkRemark/reducers/landMarkRemarkReducer.js" />
+        <option value="$PROJECT_DIR$/client/factories/modelFactory.js" />
       </list>
     </option>
   </component>
@@ -276,10 +283,10 @@
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-19" />
+    <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1918" />
-    <option name="height" value="1038" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -296,7 +303,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -329,6 +335,45 @@
               <item name="client" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="actions" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Landmark Remark" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Landmark-Remark" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="constants" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Landmark Remark" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Landmark-Remark" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="epics" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Landmark Remark" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Landmark-Remark" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="reducer" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Landmark Remark" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Landmark-Remark" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="errorBoundary" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Landmark Remark" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Landmark-Remark" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="errorBoundary" type="462c0819:PsiDirectoryNode" />
               <item name="reducer" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -344,29 +389,6 @@
               <item name="client" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
               <item name="googleMap" type="462c0819:PsiDirectoryNode" />
-              <item name="epics" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Landmark Remark" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Landmark-Remark" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="googleMap" type="462c0819:PsiDirectoryNode" />
-              <item name="reducers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Landmark Remark" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Landmark-Remark" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="header" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Landmark Remark" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Landmark-Remark" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="header" type="462c0819:PsiDirectoryNode" />
               <item name="view" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -397,37 +419,7 @@
               <item name="client" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
               <item name="landMarkRemark" type="462c0819:PsiDirectoryNode" />
-              <item name="actions" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Landmark Remark" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Landmark-Remark" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="landMarkRemark" type="462c0819:PsiDirectoryNode" />
               <item name="reducers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Landmark Remark" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Landmark-Remark" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="landMarkRemark" type="462c0819:PsiDirectoryNode" />
-              <item name="view" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Landmark Remark" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Landmark-Remark" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="remark" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Landmark Remark" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Landmark-Remark" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="root" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Landmark Remark" type="b2602c69:ProjectViewProjectNode" />
@@ -438,36 +430,31 @@
             <path>
               <item name="Landmark Remark" type="b2602c69:ProjectViewProjectNode" />
               <item name="Landmark-Remark" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="styles" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Landmark Remark" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Landmark-Remark" type="462c0819:PsiDirectoryNode" />
               <item name="docs" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Hotels-NET-CORE/Hotels-NET-CORE/HotelsCombined/Client/webpack.config.js" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$2/Languages" value="JavaScript" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\janba\Projects\Landmark-Remark\client\factories" />
       <recent name="C:\Users\janba\Projects\Landmark-Remark\client\configurations" />
       <recent name="C:\Users\janba\Projects\Landmark-Remark\client" />
       <recent name="C:\Users\janba\Projects\Landmark-Remark\client\services" />
       <recent name="C:\Users\janba\Projects\Landmark-Remark\client\constants" />
-      <recent name="C:\Users\janba\Projects\Landmark-Remark\client\components\landMarkRemark" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -502,7 +489,8 @@
       <workItem from="1509311106304" duration="910000" />
       <workItem from="1509319357211" duration="795000" />
       <workItem from="1509391069703" duration="3093000" />
-      <workItem from="1509888265853" duration="88231000" />
+      <workItem from="1509888265853" duration="100583000" />
+      <workItem from="1512930193366" duration="12907000" />
     </task>
     <task id="LOCAL-00001" summary="static html structure implemented">
       <created>1505939490072</created>
@@ -623,11 +611,18 @@
       <option name="project" value="LOCAL" />
       <updated>1510610134627</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Implemented Immutable.js in reducers for state immutability.">
+      <created>1510701848131</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1510701848131</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="221841000" />
+    <option name="totallyTimeSpent" value="247100000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -636,12 +631,11 @@
       <window_info id="Debug Logs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1940615" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Execute Anonymous" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24895833" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32979852" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -652,6 +646,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32979852" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -677,129 +672,23 @@
     <MESSAGE value="Created reducer and action classes" />
     <MESSAGE value="Removed more native &quot;Import&quot; and implemented more dependency injection configured up front" />
     <MESSAGE value="Implement component level error handling" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implement component level error handling" />
+    <MESSAGE value="Implemented Immutable.js in reducers for state immutability." />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented Immutable.js in reducers for state immutability." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="13" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/client/configurations/configureFactories.js</url>
+          <properties />
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="15" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/client/services/modelService.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1955">
-          <caret line="115" column="27" lean-forward="false" selection-start-line="115" selection-start-column="27" selection-end-line="115" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/services/landmarkRemarkService.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="25" lean-forward="false" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/components/googleMap/constants/actionTypes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/components/googleMap/models/googleApiOptions.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/components/googleMap/constants/endpointSettings.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/configurations/configureServices.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#28#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/components/root/rootReducer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="39" column="10" lean-forward="false" selection-start-line="39" selection-start-column="10" selection-end-line="39" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/configurations/configureStore.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="14" lean-forward="false" selection-start-line="0" selection-start-column="14" selection-end-line="0" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/components/landMarkRemark/constants/landMarkRemarkActionsTypes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="30" lean-forward="false" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/components/googleMap/actions/googleMapActions.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="22" lean-forward="false" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/components/googleMap/constants/googleMapActionTypes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="26" lean-forward="false" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/components/app/epics/appEpic.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="98" lean-forward="false" selection-start-line="0" selection-start-column="91" selection-end-line="0" selection-end-column="98" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/components/googleMap/helpers/scriptLoader.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="47" lean-forward="false" selection-start-line="4" selection-start-column="47" selection-end-line="4" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="389">
-          <caret line="69" column="25" lean-forward="false" selection-start-line="69" selection-start-column="25" selection-end-line="69" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/styles/grid-bootstrap.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -812,7 +701,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -820,7 +708,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -842,34 +729,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/configurations/configureActions.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="33" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="33" />
-          <folding>
-            <element signature="e#0#107#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/configurations/configureReducers.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="53" lean-forward="false" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="53" />
-          <folding>
-            <element signature="e#0#38#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/components/errorBoundary/view/errorBoundaryPresenter.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/client/components/errorBoundary/view/errorBoundaryPresenter.js" />
     <entry file="file://$PROJECT_DIR$/client/components/errorBoundary/constants/errorBoundaryActionTypes.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -882,14 +742,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="19" column="72" lean-forward="false" selection-start-line="19" selection-start-column="72" selection-end-line="19" selection-end-column="72" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/components/root/rootComponent.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="75" lean-forward="false" selection-start-line="6" selection-start-column="75" selection-end-line="6" selection-end-column="75" />
           <folding />
         </state>
       </provider>
@@ -930,7 +782,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="5" column="37" lean-forward="false" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="37" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -939,32 +790,6 @@
         <state relative-caret-position="68">
           <caret line="5" column="20" lean-forward="false" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/components/googleMap/view/googleMapPresenter.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/components/landMarkRemark/actions/landMarkRemarkActions.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="32" column="20" lean-forward="false" selection-start-line="32" selection-start-column="12" selection-end-line="32" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/components/googleMap/view/googleMapContainer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="193" column="70" lean-forward="false" selection-start-line="193" selection-start-column="62" selection-end-line="193" selection-end-column="70" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -980,7 +805,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -989,7 +813,7 @@
         <state relative-caret-position="374">
           <caret line="22" column="40" lean-forward="false" selection-start-line="22" selection-start-column="40" selection-end-line="22" selection-end-column="40" />
           <folding>
-            <element signature="e#0#49#0" expanded="true" />
+            <element signature="e#0#49#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1007,6 +831,126 @@
         <state relative-caret-position="136">
           <caret line="8" column="32" lean-forward="true" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
           <folding>
+            <element signature="e#0#36#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="36" column="38" lean-forward="true" selection-start-line="31" selection-start-column="3" selection-end-line="36" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.babelrc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="34" lean-forward="false" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Hotels-NET-CORE/Hotels-NET-CORE/HotelsCombined/Client/webpack.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="28" lean-forward="true" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/components/landMarkRemark/constants/landMarkRemarkActionsTypes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="45" lean-forward="false" selection-start-line="17" selection-start-column="15" selection-end-line="17" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/components/googleMap/reducers/googleMapReducer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="68" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webpack.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="545">
+          <caret line="55" column="8" lean-forward="false" selection-start-line="55" selection-start-column="8" selection-end-line="55" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/components/landMarkRemark/actions/landMarkRemarkActions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="28" column="30" lean-forward="false" selection-start-line="28" selection-start-column="4" selection-end-line="28" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/configurations/configureActions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="33" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="33" />
+          <folding>
+            <element signature="e#0#107#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/configurations/configureServices.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#46#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/configurations/configureStore.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="29" lean-forward="false" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/components/root/rootComponent.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="99" lean-forward="false" selection-start-line="15" selection-start-column="87" selection-end-line="15" selection-end-column="99" />
+          <folding>
+            <element signature="e#0#40#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/components/app/appComponent.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="47" lean-forward="true" selection-start-line="1" selection-start-column="47" selection-end-line="1" selection-end-column="47" />
+          <folding>
             <element signature="e#0#36#0" expanded="true" />
           </folding>
         </state>
@@ -1014,21 +958,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/client/components/app/view/appPresenter.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="28" lean-forward="true" selection-start-line="29" selection-start-column="28" selection-end-line="29" selection-end-column="28" />
-          <folding>
-            <element signature="e#0#26#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/components/app/appComponent.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="8" selection-end-column="2" />
-          <folding>
-            <element signature="e#0#36#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="238">
+          <caret line="18" column="176" lean-forward="false" selection-start-line="18" selection-start-column="176" selection-end-line="18" selection-end-column="176" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1037,8 +969,56 @@
         <state relative-caret-position="68">
           <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
           <folding>
-            <element signature="e#0#36#0" expanded="true" />
+            <element signature="e#0#36#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/components/landMarkRemark/view/landMarkRemarkContainer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="4" column="14" lean-forward="false" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/models/userMapModel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/components/app/reducer/appReducer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="952">
+          <caret line="56" column="53" lean-forward="true" selection-start-line="56" selection-start-column="53" selection-end-line="56" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/configurations/configureReducers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/components/app/epics/appEpic.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="88" lean-forward="false" selection-start-line="4" selection-start-column="67" selection-end-line="4" selection-end-column="88" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/models/userModel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1052,19 +1032,39 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/components/googleMap/reducers/googleMapReducer.js">
+    <entry file="file://$PROJECT_DIR$/client/configurations/configureFactories.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="68" />
+          <caret line="2" column="13" lean-forward="true" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/components/landMarkRemark/view/landMarkRemarkContainer.js">
+    <entry file="file://$PROJECT_DIR$/client/components/googleMap/view/googleMapPresenter.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="4" column="14" lean-forward="false" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="26" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/components/landMarkRemark/view/landMarkRemarkPresenter.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="76" lean-forward="false" selection-start-line="18" selection-start-column="76" selection-end-line="18" selection-end-column="76" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/components/landMarkOthersRemark/landMarkOtherRemarksComponent.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="58" lean-forward="false" selection-start-line="10" selection-start-column="58" selection-end-line="10" selection-end-column="58" />
+          <folding>
+            <element signature="e#0#36#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1086,39 +1086,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/components/landMarkRemark/view/landMarkRemarkPresenter.js">
+    <entry file="file://$PROJECT_DIR$/client/components/googleMap/view/googleMapContainer.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="33" lean-forward="false" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
+        <state relative-caret-position="329">
+          <caret line="171" column="46" lean-forward="true" selection-start-line="171" selection-start-column="46" selection-end-line="171" selection-end-column="46" />
           <folding>
-            <element signature="e#0#26#0" expanded="true" />
+            <element signature="e#0#38#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/factories/modelFactory.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="799">
+          <caret line="47" column="37" lean-forward="false" selection-start-line="47" selection-start-column="29" selection-end-line="47" selection-end-column="37" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/components/landMarkRemark/reducers/landMarkRemarkReducer.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="37" column="32" lean-forward="false" selection-start-line="37" selection-start-column="22" selection-end-line="37" selection-end-column="32" />
+        <state relative-caret-position="646">
+          <caret line="80" column="37" lean-forward="true" selection-start-line="80" selection-start-column="37" selection-end-line="80" selection-end-column="37" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/components/app/reducer/appReducer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="21" column="46" lean-forward="false" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/components/landMarkOthersRemark/landMarkOtherRemarksComponent.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="33" lean-forward="false" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
-          <folding>
-            <element signature="e#0#36#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>

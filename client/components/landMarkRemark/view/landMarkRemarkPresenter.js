@@ -5,7 +5,7 @@ import GoogleMapComponent from '../../googleMap/googleMapComponent';
  * @Function LandMarkRemarkPresenter
  * @desc React Presenter function returning component jsx
  */
-const LandMarkRemarkPresenter =({modelService, actions} ) => (
+const LandMarkRemarkPresenter =({modelFactory, actions} ) => (
     <section id="landmark-remarks-component" className="col-xs-12 col-sm-8 col-md-9 col-lg-9 col-xl-9">
         <div className="row">
             <header className="col-xs-7">
@@ -16,7 +16,7 @@ const LandMarkRemarkPresenter =({modelService, actions} ) => (
             </div>
         </div>
         <div className="row">
-            <GoogleMapComponent actions={actions} modelService={modelService}></GoogleMapComponent>
+            <GoogleMapComponent actions={actions} modelFactory={modelFactory}></GoogleMapComponent>
         </div>
     </section>
 );
