@@ -2,32 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9dd80f12-4aba-4899-ac74-78ab4a798251" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/.vs/server/v15/.suo" afterPath="$PROJECT_DIR$/server/.vs/server/v15/.suo" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/.vs/server/v15/sqlite3/storage.ide" afterPath="$PROJECT_DIR$/server/.vs/server/v15/sqlite3/storage.ide" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/Landmark-Remark.api/bin/Debug/netcoreapp2.0/Landmark-Remark.api.dll" afterPath="$PROJECT_DIR$/server/Landmark-Remark.api/bin/Debug/netcoreapp2.0/Landmark-Remark.api.dll" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/Landmark-Remark.api/bin/Debug/netcoreapp2.0/Landmark-Remark.api.pdb" afterPath="$PROJECT_DIR$/server/Landmark-Remark.api/bin/Debug/netcoreapp2.0/Landmark-Remark.api.pdb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/Landmark-Remark.api/obj/Debug/netcoreapp2.0/Landmark-Remark.api.csprojResolveAssemblyReference.cache" afterPath="$PROJECT_DIR$/server/Landmark-Remark.api/obj/Debug/netcoreapp2.0/Landmark-Remark.api.csprojResolveAssemblyReference.cache" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/Landmark-Remark.api/obj/Debug/netcoreapp2.0/Landmark-Remark.api.dll" afterPath="$PROJECT_DIR$/server/Landmark-Remark.api/obj/Debug/netcoreapp2.0/Landmark-Remark.api.dll" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/Landmark-Remark.api/obj/Debug/netcoreapp2.0/Landmark-Remark.api.pdb" afterPath="$PROJECT_DIR$/server/Landmark-Remark.api/obj/Debug/netcoreapp2.0/Landmark-Remark.api.pdb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/components/app/reducer/appReducer.js" afterPath="$PROJECT_DIR$/client/components/app/reducer/appReducer.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/components/app/view/appPresenter.js" afterPath="$PROJECT_DIR$/client/components/app/view/appPresenter.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/components/googleMap/view/googleMapContainer.js" afterPath="$PROJECT_DIR$/client/components/googleMap/view/googleMapContainer.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/components/landMarkOthersRemark/landMarkOtherRemarksComponent.js" afterPath="$PROJECT_DIR$/client/components/landMarkOthersRemark/landMarkOtherRemarksComponent.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/components/landMarkRemark/actions/landMarkRemarkActions.js" afterPath="$PROJECT_DIR$/client/components/landMarkRemark/actions/landMarkRemarkActions.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/components/landMarkRemark/constants/landMarkRemarkActionsTypes.js" afterPath="$PROJECT_DIR$/client/components/landMarkRemark/constants/landMarkRemarkActionsTypes.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/components/landMarkRemark/reducers/landMarkRemarkReducer.js" afterPath="$PROJECT_DIR$/client/components/landMarkRemark/reducers/landMarkRemarkReducer.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/components/landMarkRemark/view/landMarkRemarkPresenter.js" afterPath="$PROJECT_DIR$/client/components/landMarkRemark/view/landMarkRemarkPresenter.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/components/root/rootComponent.js" afterPath="$PROJECT_DIR$/client/components/root/rootComponent.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/configurations/configureFactories.js" afterPath="$PROJECT_DIR$/client/configurations/configureFactories.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/configurations/configureServices.js" afterPath="$PROJECT_DIR$/client/configurations/configureServices.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/factories/modelFactory.js" afterPath="$PROJECT_DIR$/client/factories/modelFactory.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/Landmark-Remark.api/obj/Debug/netcoreapp2.0/Landmark-Remark.api.AssemblyInfo.cs" afterPath="$PROJECT_DIR$/server/Landmark-Remark.api/obj/Debug/netcoreapp2.0/Landmark-Remark.api.AssemblyInfo.cs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/Landmark-Remark.api/obj/Debug/netcoreapp2.0/Landmark-Remark.api.AssemblyInfoInputs.cache" afterPath="$PROJECT_DIR$/server/Landmark-Remark.api/obj/Debug/netcoreapp2.0/Landmark-Remark.api.AssemblyInfoInputs.cache" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/Landmark-Remark.api/obj/Landmark-Remark.api.csproj.nuget.cache" afterPath="$PROJECT_DIR$/server/Landmark-Remark.api/obj/Landmark-Remark.api.csproj.nuget.cache" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/Landmark-Remark.api/obj/Landmark-Remark.api.csproj.nuget.g.props" afterPath="$PROJECT_DIR$/server/Landmark-Remark.api/obj/Landmark-Remark.api.csproj.nuget.g.props" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/Landmark-Remark.api/obj/project.assets.json" afterPath="$PROJECT_DIR$/server/Landmark-Remark.api/obj/project.assets.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webpack.config.js" afterPath="$PROJECT_DIR$/webpack.config.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/index.html" afterPath="$PROJECT_DIR$/client/index.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -62,11 +39,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="landMarkRemarkReducer.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="landMarkRemarkReducer.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/components/landMarkRemark/reducers/landMarkRemarkReducer.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="646">
-              <caret line="80" column="37" lean-forward="true" selection-start-line="80" selection-start-column="37" selection-end-line="80" selection-end-column="37" />
+            <state relative-caret-position="357">
+              <caret line="62" column="86" lean-forward="false" selection-start-line="62" selection-start-column="86" selection-end-line="62" selection-end-column="86" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/client/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="35" lean-forward="false" selection-start-line="5" selection-start-column="35" selection-end-line="5" selection-end-column="35" />
               <folding />
             </state>
           </provider>
@@ -140,18 +127,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="googleMapComponent.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/components/googleMap/googleMapComponent.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="34" lean-forward="false" selection-start-line="14" selection-start-column="34" selection-end-line="14" selection-end-column="34" />
-              <folding>
-                <element signature="e#1#37#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -217,7 +192,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/client/configureDependencies.js" />
         <option value="$PROJECT_DIR$/client/utils/configureReducers.js" />
         <option value="$PROJECT_DIR$/client/configureServices.js" />
         <option value="$PROJECT_DIR$/client/components/googleMap/actions/googleMapActions.js" />
@@ -266,8 +240,9 @@
         <option value="$PROJECT_DIR$/client/configurations/configureFactories.js" />
         <option value="$PROJECT_DIR$/client/components/googleMap/view/googleMapContainer.js" />
         <option value="$PROJECT_DIR$/client/components/landMarkOthersRemark/landMarkOtherRemarksComponent.js" />
-        <option value="$PROJECT_DIR$/client/components/landMarkRemark/reducers/landMarkRemarkReducer.js" />
         <option value="$PROJECT_DIR$/client/factories/modelFactory.js" />
+        <option value="$PROJECT_DIR$/client/components/landMarkRemark/reducers/landMarkRemarkReducer.js" />
+        <option value="$PROJECT_DIR$/client/index.html" />
       </list>
     </option>
   </component>
@@ -490,7 +465,7 @@
       <workItem from="1509319357211" duration="795000" />
       <workItem from="1509391069703" duration="3093000" />
       <workItem from="1509888265853" duration="100583000" />
-      <workItem from="1512930193366" duration="12907000" />
+      <workItem from="1512930193366" duration="17916000" />
     </task>
     <task id="LOCAL-00001" summary="static html structure implemented">
       <created>1505939490072</created>
@@ -618,11 +593,18 @@
       <option name="project" value="LOCAL" />
       <updated>1510701848131</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Refactored model service">
+      <created>1512944943169</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1512944943169</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="247100000" />
+    <option name="totallyTimeSpent" value="252109000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -673,7 +655,8 @@
     <MESSAGE value="Removed more native &quot;Import&quot; and implemented more dependency injection configured up front" />
     <MESSAGE value="Implement component level error handling" />
     <MESSAGE value="Implemented Immutable.js in reducers for state immutability." />
-    <option name="LAST_COMMIT_MESSAGE" value="Implemented Immutable.js in reducers for state immutability." />
+    <MESSAGE value="Refactored model service" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactored model service" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -689,14 +672,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/client/styles/grid-bootstrap.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/styles/responsive-text.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -915,7 +890,7 @@
         <state relative-caret-position="34">
           <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
           <folding>
-            <element signature="e#0#46#0" expanded="true" />
+            <element signature="e#0#46#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1106,8 +1081,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/client/components/landMarkRemark/reducers/landMarkRemarkReducer.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="80" column="37" lean-forward="true" selection-start-line="80" selection-start-column="37" selection-end-line="80" selection-end-column="37" />
+        <state relative-caret-position="357">
+          <caret line="62" column="86" lean-forward="false" selection-start-line="62" selection-start-column="86" selection-end-line="62" selection-end-column="86" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="35" lean-forward="false" selection-start-line="5" selection-start-column="35" selection-end-line="5" selection-end-column="35" />
           <folding />
         </state>
       </provider>

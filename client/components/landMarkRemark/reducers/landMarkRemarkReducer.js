@@ -61,16 +61,15 @@ class LandMarkRemarkReducer {
             case this.actionTypes.UPDATE_LANDMARK_REMARK:
                 //Create the new state with the specified landmark updated remark text
                 return state.updateIn(['userMap', 'user', 'landMarks'], landMarks => {
-                    return landMarks.map(landMark => {
+                    const updateLandMarks = landMarks.map(landMark => {
                         const landMarkId = landMark.get('id');
+                        let updatedLandmark = landMark;
                         if (landMarkId === action.landMarkId) {
-                            return landMark.update('remark', remark => {
-                                remark.text = action.remarkText;
-                                return remark;
-                            });
+                            updatedLandmark = landMark.setIn(['remark', 'text'], action.remarkText );
                         }
-                        return landMark
+                        return updatedLandmark;
                     });
+                    return updateLandMarks;
                 });
             default:
                 return state
